@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foto Video Slider - YES</title>
+    <link
+      rel="shortcut icon"
+      href="./images/icon-yes.svg"
+      type="image/x-icon"
+    />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#166866",
+            },
+            screens: {
+              "2xs": "390px",
+              // => @media (min-width: 390px) { ... }
+
+              xs: "480px",
+              // => @media (min-width: 480px) { ... }
+
+              sm: "640px",
+              // => @media (min-width: 640px) { ... }
+
+              md: "768px",
+              // => @media (min-width: 768px) { ... }
+
+              lg: "1024px",
+              // => @media (min-width: 1024px) { ... }
+
+              xl: "1280px",
+              // => @media (min-width: 1280px) { ... }
+
+              "2xl": "1536px",
+              // => @media (min-width: 1536px) { ... }
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X8KYT8LD2F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X8KYT8LD2F');
+</script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="bg-white fixed flex items-center justify-center w-full z-[49] shadow-[0px_6px_8px_0px_#00000026]"
+    >
+      <div
+        class="w-full lg:h-[100px] h-[70px] max-w-[1200px] flex max-lg:flex-wrap items-center justify-between lg:px-4 relative"
+      >
+        <a
+          href="index.html"
+          class="lg:w-full lg:h-[100px] h-[70px] flex items-center lg:max-w-[150px]"
+        >
+          <img
+            src="./images/logo-yes.svg"
+            class="lg:h-[68px] h-[45px] max-lg:ml-4"
+          />
+        </a>
+
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex h-[70px] flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden max-lg:mr-4"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="hidden w-full lg:max-w-[80%] max-w-[100%] lg:ml-5 lg:block bg-white max-lg:shadow-[0px_6px_8px_0px_#00000026]"
+          id="navbar-default"
+        >
+          <ul
+            class="text-[#1E1E1E] min-h-[100px] lg:items-center capitalize font-bold w-full text-sm flex justify-between flex-col p-4 lg:p-0 rounded-lg lg:flex-row"
+          >
+            <li class="max-lg:mb-4">
+              <a href="about.html"> Tentang </a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="program.html"> Program</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="agenda.html"> Agenda</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="pojok-suara.html"> Pojok suara</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="publikasi-detail.html"> Publikasi</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="data.html"> Data</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="foto-video.html"> Foto & Video</a>
+            </li>
+            <li class="flex justify-end lg:w-[25%] w-full max-lg:justify-start">
+              <div class="flex justify-between items-center lg:ml-4 lg:w-full">
+                <a href="#" class="lg:mr-4 mr-5">
+                  <img src="icons/user-circle.svg" class="w-[38px] h-auto" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/fb.svg" class="h-[17px]" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/tw.svg" class="h-[17px]" />
+                </a>
+                <a href="https://www.instagram.com/youtheconomicsummit.official/?igsh=aHoyc2pncDBzdzZx#" class="lg:mr-3 mr-5">
+                  <img src="icons/ig.svg" class="h-[17px]" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/yt.svg" class="h-[17px]" />
+                </a>
+                <a href="#">
+                  <img src="icons/tk.svg" class="h-[17px]" />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="w-full relative lg:pt-[100px] pt-[70px]">
+      <div class="w-full">
+        <div class="w-full max-w-[1200px] mx-auto px-4 relative">
+          <img
+            src="./images/core-suara.svg"
+            class="md:h-[84px] sm:h-[60px] xs:h-[40px] h-[30px] absolute top-0 lg:right-0 right-4"
+          />
+        </div>
+        <img src="./images/banner.svg" class="w-full" />
+      </div>
+    </header>
+
+    <!-- Foto & Video -->
+    <section class="w-full">
+      <div class="w-full max-w-[1200px] mx-auto px-4 md:py-[80px] py-[50px]">
+        <span
+          class="md:h-[10px] md:w-[69px] h-[5px] w-[40px] bg-primary block md:mb-[20px] mb-[15px]"
+        ></span>
+        <h1
+          class="capitalize :text-[36px] xs:text-[25px] text-[16px] text-primary mb-[20px] font-bold"
+        >
+          Foto & video
+        </h1>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section class="w-full relative">
+      <img
+        src="./images/video/bg.svg"
+        class="absolute inset-0 h-full w-full object-cover"
+        alt="Background"
+      />
+      <div
+        class="w-full max-w-[1200px] mx-auto px-4 md:py-[80px] py-[40px] relative"
+      >
+        <span
+          class="md:h-[10px] md:w-[69px] h-[5px] w-[40px] bg-white mx-auto block md:mb-[20px] mb-[15px]"
+        ></span>
+        <h2
+          class="lg:text-[36px] xs:text-[25px] text-[16px] text-white mb-[20px] font-bold text-center"
+        >
+          Video
+        </h2>
+        <span
+          class="mb-[50px] text-white xs:text-base text-xs block text-center"
+          >Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.</span
+        >
+
+        <div class="swiper swiper-video custom pb-[50px]">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide sm:px-[80px]">
+              <div class="flex flex-col">
+                <div class="w-full flex flex-col">
+                  <div
+                    class="w-full flex max-h-[540px] overflow-hidden items-center justify-center md:mb-8 mb-4"
+                  >
+                    <a href="detail-video.html" class="z-[5] absolute">
+                      <img
+                        src="./images/play.svg"
+                        class="md:w-[110px] sm:w-[70px] w-[50px]"
+                      />
+                    </a>
+                    <img src="./images/video/img1.svg" class="w-full" />
+                  </div>
+                  <a href="#">
+                    <h2
+                      class="uppercase md:text-[24px] text-sm font-bold text-[#E94E1B] text-center mb-4"
+                    >
+                      SMART GREEN CITy
+                    </h2>
+                  </a>
+                  <p
+                    class="text-white md:text-[18px] text-xs leading-normal text-center mb-6"
+                  >
+                    Cras tincidunt, lacus ut scelerisque blandit, nunc orci
+                    blandit odio, pretium aliquam dolor arcu ut leo. Phasellus
+                    diam nisi, semper non facilisis faucibus, placerat sed diam.
+                    pretium aliquam dolor arcu ut leo. Phasellus diam nisi,
+                    semper pretium aliquam dolor arcu ut leo. Phasellus diam
+                    nisi, semper
+                  </p>
+                  <div
+                    class="w-full grid md:grid-cols-4 2xs:grid-cols-2 grid-cols-1 gap-4"
+                  >
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide sm:px-[80px]">
+              <div class="flex flex-col">
+                <div class="w-full flex flex-col">
+                  <div
+                    class="w-full flex max-h-[540px] overflow-hidden items-center justify-center md:mb-8 mb-4"
+                  >
+                    <a href="detail-video.html" class="z-[5] absolute">
+                      <img
+                        src="./images/play.svg"
+                        class="md:w-[110px] sm:w-[70px] w-[50px]"
+                      />
+                    </a>
+                    <img src="./images/video/img1.svg" class="w-full" />
+                  </div>
+                  <a href="#">
+                    <h2
+                      class="uppercase md:text-[24px] text-sm font-bold text-[#E94E1B] text-center mb-4"
+                    >
+                      SMART GREEN CITy
+                    </h2>
+                  </a>
+                  <p
+                    class="text-white md:text-[18px] text-xs leading-normal text-center mb-6"
+                  >
+                    Cras tincidunt, lacus ut scelerisque blandit, nunc orci
+                    blandit odio, pretium aliquam dolor arcu ut leo. Phasellus
+                    diam nisi, semper non facilisis faucibus, placerat sed diam.
+                    pretium aliquam dolor arcu ut leo. Phasellus diam nisi,
+                    semper pretium aliquam dolor arcu ut leo. Phasellus diam
+                    nisi, semper
+                  </p>
+                  <div
+                    class="w-full grid md:grid-cols-4 2xs:grid-cols-2 grid-cols-1 gap-4"
+                  >
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-prev max-md:hidden top-[43%]"></div>
+          <div class="swiper-button-next max-md:hidden top-[43%]"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Foto -->
+    <section class="w-full relative">
+      <div
+        class="w-full max-w-[1200px] mx-auto px-4 md:py-[80px] py-[40px] relative"
+      >
+        <span
+          class="md:h-[10px] md:w-[69px] h-[5px] w-[40px] bg-[#E94E1B] mx-auto block md:mb-[20px] mb-[15px]"
+        ></span>
+        <h2
+          class="lg:text-[36px] xs:text-[25px] text-[16px] text-[#E94E1B] mb-[20px] font-bold text-center"
+        >
+          Foto
+        </h2>
+        <span
+          class="mb-[50px] text-black xs:text-base text-xs block text-center"
+          >Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.</span
+        >
+
+        <div class="swiper swiper-foto custom pb-[50px]">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide sm:px-[80px]">
+              <div class="flex flex-col">
+                <div class="w-full flex flex-col">
+                  <div
+                    class="w-full flex overflow-hidden items-center justify-center md:mb-8 mb-4"
+                  >
+                    <a href="detail-photo.html" class="w-full">
+                      <img src="./images/photo/img2.svg" class="w-full" />
+                    </a>
+                  </div>
+                  <a href="#">
+                    <h2
+                      class="uppercase md:text-[24px] text-sm font-bold text-[#E94E1B] text-center mb-4"
+                    >
+                      SMART GREEN CITy
+                    </h2>
+                  </a>
+                  <p
+                    class="text-[#3C3C3B] md:text-[18px] text-xs leading-normal text-center mb-6"
+                  >
+                    Cras tincidunt, lacus ut scelerisque blandit, nunc orci
+                    blandit odio, pretium aliquam dolor arcu ut leo. Phasellus
+                    diam nisi, semper non facilisis faucibus, placerat sed diam.
+                    pretium aliquam dolor arcu ut leo. Phasellus diam nisi,
+                    semper pretium aliquam dolor arcu ut leo. Phasellus diam
+                    nisi, semper
+                  </p>
+                  <div
+                    class="w-full grid md:grid-cols-4 2xs:grid-cols-2 grid-cols-1 gap-4"
+                  >
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide sm:px-[80px]">
+              <div class="flex flex-col">
+                <div class="w-full flex flex-col">
+                  <div
+                    class="w-full flex overflow-hidden items-center justify-center md:mb-8 mb-4"
+                  >
+                    <a href="detail-photo.html" class="w-full">
+                      <img src="./images/photo/img2.svg" class="w-full" />
+                    </a>
+                  </div>
+                  <a href="#">
+                    <h2
+                      class="uppercase md:text-[24px] text-sm font-bold text-[#E94E1B] text-center mb-4"
+                    >
+                      SMART GREEN CITy
+                    </h2>
+                  </a>
+                  <p
+                    class="text-[#3C3C3B] md:text-[18px] text-xs leading-normal text-center mb-6"
+                  >
+                    Cras tincidunt, lacus ut scelerisque blandit, nunc orci
+                    blandit odio, pretium aliquam dolor arcu ut leo. Phasellus
+                    diam nisi, semper non facilisis faucibus, placerat sed diam.
+                    pretium aliquam dolor arcu ut leo. Phasellus diam nisi,
+                    semper pretium aliquam dolor arcu ut leo. Phasellus diam
+                    nisi, semper
+                  </p>
+                  <div
+                    class="w-full grid md:grid-cols-4 2xs:grid-cols-2 grid-cols-1 gap-4"
+                  >
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                    <div class="w-full max-h-[300px] overflow-hidden">
+                      <a href="#">
+                        <img src="./images/video/img2.svg" class="w-full" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-prev max-md:hidden top-[43%]"></div>
+          <div class="swiper-button-next max-md:hidden top-[43%]"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="w-full relative xs:h-full overflow-hidden bg-[#F2F2F2]">
+      <div class="w-full max-w-[1200px] mx-auto px-2 py-[10px] relative ">
+          <p class="text-center">© 2025 youtheconomicsummit.org - All Rights Reserved</p>
+      </div>
+      <div>
+        <img
+              src="./images/foot-boot.png"
+              class=""
+            />
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".swiper-video", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      new Swiper(".swiper-foto", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

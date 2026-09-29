@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Detail - YES</title>
+    <link
+      rel="shortcut icon"
+      href="./images/icon-yes.svg"
+      type="image/x-icon"
+    />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#166866",
+            },
+            screens: {
+              "2xs": "390px",
+              // => @media (min-width: 390px) { ... }
+
+              xs: "480px",
+              // => @media (min-width: 480px) { ... }
+
+              sm: "640px",
+              // => @media (min-width: 640px) { ... }
+
+              md: "768px",
+              // => @media (min-width: 768px) { ... }
+
+              lg: "1024px",
+              // => @media (min-width: 1024px) { ... }
+
+              xl: "1280px",
+              // => @media (min-width: 1280px) { ... }
+
+              "2xl": "1536px",
+              // => @media (min-width: 1536px) { ... }
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X8KYT8LD2F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X8KYT8LD2F');
+</script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="bg-white fixed flex items-center justify-center w-full z-[49] shadow-[0px_6px_8px_0px_#00000026]"
+    >
+      <div
+        class="w-full lg:h-[100px] h-[70px] max-w-[1200px] flex max-lg:flex-wrap items-center justify-between lg:px-4 relative"
+      >
+        <a
+          href="index.html"
+          class="lg:w-full lg:h-[100px] h-[70px] flex items-center lg:max-w-[150px]"
+        >
+          <img
+            src="./images/logo-yes.svg"
+            class="lg:h-[68px] h-[45px] max-lg:ml-4"
+          />
+        </a>
+
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex h-[70px] flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden max-lg:mr-4"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="hidden w-full lg:max-w-[80%] max-w-[100%] lg:ml-5 lg:block bg-white max-lg:shadow-[0px_6px_8px_0px_#00000026]"
+          id="navbar-default"
+        >
+          <ul
+            class="text-[#1E1E1E] min-h-[100px] lg:items-center capitalize font-bold w-full text-sm flex justify-between flex-col p-4 lg:p-0 rounded-lg lg:flex-row"
+          >
+            <li class="max-lg:mb-4">
+              <a href="about.html"> Tentang </a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="program.html"> Program</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="agenda.html"> Agenda</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="pojok-suara.html"> Pojok suara</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="publikasi-detail.html"> Publikasi</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="data.html"> Data</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="foto-video.html"> Foto & Video</a>
+            </li>
+            <li class="flex justify-end lg:w-[25%] w-full max-lg:justify-start">
+              <div class="flex justify-between items-center lg:ml-4 lg:w-full">
+                <a href="#" class="lg:mr-4 mr-5">
+                  <img src="icons/user-circle.svg" class="w-[38px] h-auto" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/fb.svg" class="h-[17px]" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/tw.svg" class="h-[17px]" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/ig.svg" class="h-[17px]" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/yt.svg" class="h-[17px]" />
+                </a>
+                <a href="#">
+                  <img src="icons/tk.svg" class="h-[17px]" />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="w-full relative lg:pt-[100px] pt-[70px]">
+      <div class="w-full">
+        <div class="w-full max-w-[1200px] mx-auto px-4 relative">
+          <img
+            src="./images/core-suara.svg"
+            class="md:h-[84px] sm:h-[60px] xs:h-[40px] h-[30px] absolute top-0 lg:right-0 right-4"
+          />
+        </div>
+        <img src="./images/banner.svg" class="w-full" />
+      </div>
+    </header>
+
+    <!-- Video -->
+    <section class="w-full">
+      <div class="w-full max-w-[1200px] mx-auto px-4 md:py-[80px] py-[50px]">
+        <span
+          class="md:h-[10px] md:w-[69px] h-[5px] w-[40px] bg-primary block md:mb-[20px] mb-[15px]"
+        ></span>
+        <h1
+          class="capitalize :text-[36px] xs:text-[25px] text-[16px] text-primary mb-[20px] font-bold"
+        >
+          Video
+        </h1>
+        <div class="w-full flex mt-10 max-lg:flex-col">
+          <div
+            class="w-full lg:max-w-[65%] lg:border-x border-[#CFCFCF] lg:px-8"
+          >
+            <h2
+              class="text-primary sm:text-[20px] text-base font-semibold mb-5"
+            >
+              Etiam auctor elementum elit. Fusce et mauris nec nunc maximus
+              aliquam id et ligula. Duis sodales malesuada sapien non tincidunt.
+            </h2>
+            <iframe
+              width="100%"
+              height="400"
+              src="https://www.youtube.com/embed/ZPLo1tJZcMc?si=YnxganrQvlb-WQu0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="mb-5"
+            ></iframe>
+
+            <div class="swiper swiper-video detail custom mb-5">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div
+                    class="w-full md:max-w-[200px] flex justify-center items-center"
+                  >
+                    <a href="#" class="absolute">
+                      <img src="./images/play.svg" class="w-[30px]" />
+                    </a>
+                    <img src="./images/video/img2.svg" class="w-full" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="w-full md:max-w-[200px] flex justify-center items-center"
+                  >
+                    <a href="#" class="absolute">
+                      <img src="./images/play.svg" class="w-[30px]" />
+                    </a>
+                    <img src="./images/video/img2.svg" class="w-full" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="w-full md:max-w-[200px] flex justify-center items-center"
+                  >
+                    <a href="#" class="absolute">
+                      <img src="./images/play.svg" class="w-[30px]" />
+                    </a>
+                    <img src="./images/video/img2.svg" class="w-full" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="w-full md:max-w-[200px] flex justify-center items-center"
+                  >
+                    <a href="#" class="absolute">
+                      <img src="./images/play.svg" class="w-[30px]" />
+                    </a>
+                    <img src="./images/video/img2.svg" class="w-full" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="w-full md:max-w-[200px] flex justify-center items-center"
+                  >
+                    <a href="#" class="absolute">
+                      <img src="./images/play.svg" class="w-[30px]" />
+                    </a>
+                    <img src="./images/video/img2.svg" class="w-full" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="w-full md:max-w-[200px] flex justify-center items-center"
+                  >
+                    <a href="#" class="absolute">
+                      <img src="./images/play.svg" class="w-[30px]" />
+                    </a>
+                    <img src="./images/video/img2.svg" class="w-full" />
+                  </div>
+                </div>
+              </div>
+              <!-- Navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="sm:text-base text-sm text-[#3C3C3B]">
+              Ut eget orci ac dolor sollicitudin convallis in id massa. Ut
+              convallis tempus varius. Mauris mollis mauris vitae semper
+              interdum. Nunc tincidunt enim elit, quis auctor orci aliquet ut.
+              Mauris turpis sem, vestibulum id consectetur at, posuere quis
+              elit. Cras viverra lorem nec varius congue.
+              <br />
+              <br />
+              Proin consectetur purus nec urna pharetra aliquam a id urna. Sed
+              ipsum ante, auctor nec rutrum id, placerat et risus. Orci varius
+              natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus.
+              <br />
+              <br />Mauris et maximus quam, id elementum metus. Mauris ac tortor
+              non ante aliquet pretium vel et mi. Pellentesque pulvinar vitae
+              nunc sit amet dictum. Leo eros imperdiet dolor, sed viverra leo
+              neque quis lectus. Mauris id tincidunt nunc, nec fringilla est.
+              Phasellus ut enim cursus, faucibus metus mollis, ullamcorper eros.
+              Aenean commodo libero urna, ac mattis purus placerat ac.
+              <br />
+              <br />Sed volutpat laoreet sagittis. Pellentesque eget orci
+              hendrerit augue vulputate dictum. Nam pulvinar ac arcu in
+              faucibus. Ut massa sem, ullamcorper non consequat ac, sodales vel
+              tortor. Vestibulum ut metus eu arcu consequat molestie non at
+              ipsum. Aliquam condimentum libero at finibus porttitor. Vestibulum
+              ut metus eu arcu consequat molestie non at ipsum. Aliquam
+              condimentum
+            </div>
+          </div>
+
+          <div class="w-full lg:max-w-[35%] lg:pl-8 max-lg:mt-10">
+            <h2 class="text-primary sm:text-[25px] text-base font-bold mb-6">
+              Video Lainnya
+            </h2>
+            <ul
+              class="list-disc text-[#1E1E1E] font-semibold sm:text-[20px] text-sm"
+            >
+              <li class="flex flex-col border-b border-[#CFCFCF] pb-5 mb-5">
+                <img
+                  src="./images/pojok-suara/detail.svg"
+                  class="w-full mb-4"
+                />
+                <a href="#" class="leading-normal">
+                  Fusce et mauris nec nunc maximus aliquam id et ligula. Duis
+                  sodales malesuada sapien non tincidunt
+                </a>
+              </li>
+              <li class="flex flex-col border-b border-[#CFCFCF] pb-5 mb-5">
+                <img
+                  src="./images/pojok-suara/detail.svg"
+                  class="w-full mb-4"
+                />
+                <a href="#" class="leading-normal">
+                  Fusce et mauris nec nunc maximus aliquam id et ligula. Duis
+                  sodales malesuada sapien non tincidunt
+                </a>
+              </li>
+              <li class="flex flex-col border-b border-[#CFCFCF] pb-5 mb-5">
+                <img
+                  src="./images/pojok-suara/detail.svg"
+                  class="w-full mb-4"
+                />
+                <a href="#" class="leading-normal">
+                  Fusce et mauris nec nunc maximus aliquam id et ligula. Duis
+                  sodales malesuada sapien non tincidunt
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="w-full bg-primary">
+        <div
+          class="w-full max-w-[1200px] mx-auto px-4 py-10 flex max-lg:flex-col"
+        >
+          <div
+            class="w-full lg:max-w-[19%] lg:border-r border-white max-lg:mb-5"
+          >
+            <img
+              src="./images/logo-yes-white.svg"
+              class="lg:h-[57px] h-[70px]"
+            />
+          </div>
+          <div
+            class="w-full lg:max-w-[45%] lg:border-r border-white lg:px-5 max-lg:mb-5"
+          >
+            <p class="text-white md:text-base text-sm">
+              <b>Youth Economic Summit</b> atau disingkat <b>YES</b> merupakan
+              program pelibatan kaum muda untuk mendukung kemajuan Indonesia
+              melalui pengembangan ekonomi digital yang inklusif dan ekonomi
+              hijau yang berkelanjutan.
+            </p>
+          </div>
+          <div
+            class="w-full lg:max-w-[17%] lg:border-r border-white lg:px-5 max-lg:mb-5"
+          >
+            <ul class="text-white md:text-sm text-xs list-disc px-4">
+              <li><a href="#" class="capitalize">Tentang</a></li>
+              <li><a href="#" class="capitalize">program</a></li>
+              <li><a href="#" class="capitalize">agenda</a></li>
+              <li><a href="#" class="capitalize">kotak suara</a></li>
+              <li><a href="#" class="capitalize">publikasi</a></li>
+              <li><a href="#" class="capitalize">data</a></li>
+              <li><a href="#" class="capitalize">photo & video</a></li>
+            </ul>
+          </div>
+          <div class="w-full lg:max-w-[19%] lg:px-5">
+            <div
+              class="flex lg:justify-between max-lg:justify-center lg:ml-4 lg:w-full"
+            >
+              <a href="#" class="lg:mr-3 mr-5">
+                <img src="icons/fb-white.svg" class="h-[20px]" />
+              </a>
+              <a href="#" class="lg:mr-3 mr-5">
+                <img src="icons/tw-white.svg" class="h-[20px]" />
+              </a>
+              <a href="#" class="lg:mr-3 mr-5">
+                <img src="icons/ig-white.svg" class="h-[20px]" />
+              </a>
+              <a href="#" class="lg:mr-3 mr-5">
+                <img src="icons/yt-white.svg" class="h-[20px]" />
+              </a>
+              <a href="#">
+                <img src="icons/tk-white.svg" class="h-[20px]" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full bg-[#239493]">
+        <div class="w-full max-w-[1200px] mx-auto px-4 py-6">
+          <p class="md:text-[18px] text-xs text-center text-white">
+            © 2024 suara.com - All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".swiper-video", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: false,
+        breakpoints: {
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          400: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

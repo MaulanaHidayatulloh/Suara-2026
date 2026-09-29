@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda - YES</title>
+    <link
+      rel="shortcut icon"
+      href="./images/icon-yes.svg"
+      type="image/x-icon"
+    />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#166866",
+            },
+            screens: {
+              xxs: "360px",
+              // => @media (min-width: 390px) { ... }
+
+              xs: "480px",
+              // => @media (min-width: 480px) { ... }
+
+              sm: "640px",
+              // => @media (min-width: 640px) { ... }
+
+              md: "768px",
+              // => @media (min-width: 768px) { ... }
+
+              lg: "1024px",
+              // => @media (min-width: 1024px) { ... }
+
+              xl: "1280px",
+              // => @media (min-width: 1280px) { ... }
+
+              "2xl": "1536px",
+              // => @media (min-width: 1536px) { ... }
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X8KYT8LD2F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X8KYT8LD2F');
+</script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="bg-white fixed flex items-center justify-center w-full z-[49] shadow-[0px_6px_8px_0px_#00000026]"
+    >
+      <div
+        class="w-full lg:h-[100px] h-[70px] max-w-[1200px] flex max-lg:flex-wrap items-center justify-between lg:px-4 relative"
+      >
+        <a
+          href="index.html"
+          class="lg:w-full lg:h-[100px] h-[70px] flex items-center lg:max-w-[150px]"
+        >
+          <img
+            src="./images/logo-yes.svg"
+            class="lg:h-[68px] h-[45px] max-lg:ml-4"
+          />
+        </a>
+
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex h-[70px] flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden max-lg:mr-4"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="hidden w-full lg:max-w-[80%] max-w-[100%] lg:ml-5 lg:block bg-white max-lg:shadow-[0px_6px_8px_0px_#00000026]"
+          id="navbar-default"
+        >
+          <ul
+            class="text-[#1E1E1E] min-h-[100px] lg:items-center capitalize font-bold w-full text-sm flex justify-between flex-col p-4 lg:p-0 rounded-lg lg:flex-row"
+          >
+            <li class="max-lg:mb-4">
+              <a href="about.html"> Tentang </a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="program.html"> Program</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="agenda.html"> Agenda</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="pojok-suara.html"> Pojok suara</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="publikasi-detail.html"> Publikasi</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="data.html"> Data</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="foto-video.html"> Foto & Video</a>
+            </li>
+            <li class="flex justify-end lg:w-[25%] w-full max-lg:justify-start">
+              <div class="flex justify-between items-center lg:ml-4 lg:w-full">
+                <a href="#" class="lg:mr-4 mr-5">
+                  <img src="icons/user-circle.svg" class="w-[38px] h-auto" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/fb.svg" class="h-[17px]" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/tw.svg" class="h-[17px]" />
+                </a>
+                <a href="https://www.instagram.com/youtheconomicsummit.official/?igsh=aHoyc2pncDBzdzZx#" class="lg:mr-3 mr-5">
+                  <img src="icons/ig.svg" class="h-[17px]" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/yt.svg" class="h-[17px]" />
+                </a>
+                <a href="#">
+                  <img src="icons/tk.svg" class="h-[17px]" />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="w-full relative lg:pt-[100px] pt-[70px]">
+      <div class="w-full">
+        <div class="w-full max-w-[1200px] mx-auto px-4 relative">
+          <img
+            src="./images/core-suara.svg"
+            class="md:h-[84px] sm:h-[60px] xs:h-[40px] h-[30px] absolute top-0 lg:right-0 right-4"
+          />
+        </div>
+        <img src="./images/banner.svg" class="w-full" />
+      </div>
+    </header>
+
+    <!-- Agenda -->
+    <section class="w-full bg-white">
+      <div class="w-full max-w-[1200px] mx-auto px-4 md:py-[80px] py-[50px]">
+        <!-- Judul -->
+        <span class="block h-[5px] md:h-[10px] w-[40px] md:w-[69px] bg-primary mb-[15px] md:mb-[20px]"></span>
+        <h1 class="uppercase text-primary text-[16px] xs:text-[25px] md:text-[36px] font-bold mb-[20px]">agenda</h1>
+    
+        <!-- Timeline Container -->
+        <div class="relative">
+          <!-- Garis Vertikal -->
+          <div
+            class="absolute md:left-1/2 md:-translate-x-1/2 left-4 transform h-full border-l-2 border-gray-300"
+          ></div>
+    
+          <!-- ITEM -->
+          <!-- April -->
+          <div class="mb-8 md:flex md:justify-end relative">
+            <!-- Titik -->
+            <div
+              class="absolute md:left-1/2 left-4 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-[#F05235] rounded-full z-10 top-0"
+            ></div>
+    
+            <!-- Konten -->
+            <div class="md:w-1/2 md:pl-6 md:text-left text-left lg:mt-[-6px] ml-10 md:ml-0">
+              <h3 class="text-[#F05235] font-semibold text-[20px]">April 2025</h3>
+              <span class="text-[14px]">30/04/2025</span>
+              <h4 class="font-semibold text-[20px] leading-tight mb-2">
+                Dapat Bonus Demografi Kenapa Gak Happy?
+              </h4>
+              <p class="text-gray-600">
+                Edisi ini membahas keresahan anak muda: mulai dari sulitnya cari kerja, tekanan sosial, hingga harapan di tengah janji bonus demografi. Edisi perdana ini dirancang sebagai forum diskusi santai dan reflektif, bertepatan dengan momentum Hari Buruh.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Mei -->
+          <div class="mb-8 md:flex md:justify-start relative">
+            <!-- Titik -->
+            <div
+              class="absolute md:left-1/2 left-4 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-[#F05235] rounded-full z-10 top-2"
+            ></div>
+    
+            <!-- Konten -->
+            <div class="md:w-1/2 md:pr-6 md:text-right text-left mt-[6px] ml-10 md:ml-0">
+              <h3 class="text-[#F05235] font-semibold text-[20px]">Mei 2025</h3>
+              <span class="text-[14px]">28/05/2025</span>
+              <h4 class="font-semibold text-[20px] leading-tight mb-2">
+                Gig Economy: Solusi atau Ilusi
+              </h4>
+              <p class="text-gray-600">
+                Ruang Gagasan edisi kedua ini hadir sebagai forum interaktif yang mengajak peserta mengurai kenyataan di balik fleksibilitas kerja, ekspektasi keseimbangan hidup, hingga minimnya perlindungan sosial pekerja gig.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Juni -->
+          <div class="mb-8 md:flex md:justify-end relative">
+            <!-- Titik -->
+            <div
+              class="absolute md:left-1/2 left-4 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-[#F05235] rounded-full z-10 top-2"
+            ></div>
+    
+            <!-- Konten -->
+            <div class="md:w-1/2 md:pl-6 md:text-left text-left mt-[0] ml-10 md:ml-0">
+              <h3 class="text-[#F05235] font-semibold text-[20px]">Juni 2025</h3>
+              <span class="text-[14px]">26/06/2025</span>
+              <h4 class="font-semibold text-[20px] leading-tight mb-2">
+                Indonesia Darurat Sampah! Kita Harus Apa?
+              </h4>
+              <p class="text-gray-600">
+                Permasalahan sampah tak kunjung usai di negeri ini. Para pemuda berdiskusi menyampaikan gagasan dan solusi melalui format role-based discussion untuk memberikan rekomendasi strategi penanganan sampah di Indonesia.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Juli -->
+          <div class="mb-8 md:flex md:justify-start relative">
+            <!-- Titik -->
+            <div
+              class="absolute md:left-1/2 left-4 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-[#F05235] rounded-full z-10 top-2"
+            ></div>
+    
+            <!-- Konten -->
+            <div class="md:w-1/2 md:pr-6 md:text-right text-left mt-[2px] ml-10 md:ml-0">
+              <h3 class="text-[#F05235] font-semibold text-[20px]">Juli 2025</h3>
+              <span class="text-[14px]">24/07/2025</span>
+              <h4 class="font-semibold text-[20px] leading-tight mb-2">
+                Zero Emission: Aksi Hari ini, Investasi Masa Depan
+              </h4>
+              <p class="text-gray-600">
+                Menuju Zero Emission harus dimulai dari diri sendiri. Pemuda sebagai pemimpin masa depan harus mulai bergerak hari ini untuk kehidupan yang lebih baik di masa depan.
+              </p>
+            </div>
+          </div>
+
+          <!-- Agustus -->
+          <div class="mb-8 md:flex md:justify-end relative">
+            <!-- Titik -->
+            <div
+              class="absolute md:left-1/2 left-4 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-[#F05235] rounded-full z-10 top-2"
+            ></div>
+    
+            <!-- Konten -->
+            <div class="md:w-1/2 md:pl-6 md:text-left text-left mt-[2px] ml-10 md:ml-0">
+              <h3 class="text-[#F05235] font-semibold text-[20px]">Agustus 2025</h3>
+              <span class="text-[14px]">14/08/2025</span>
+              <h4 class="font-semibold text-[20px] leading-tight mb-2">
+                Ruang Gagasan Edisi Kemerdekaan: Perjalanan Anak Muda Berdaya Saing Global
+              </h4>
+              <p class="text-gray-600">
+                Forum hybrid yang menghadirkan pengalaman inspiratif mahasiswa dan alumni Indonesia dari India, Rusia, dan Jepang. Membangun daya saing global melalui diskusi terkait studi luar negeri, tips beasiswa, adaptasi budaya, dan jejaring internasional sekaligus merefleksikan peran pemuda dalam semangat kemerdekaan.
+              </p>
+            </div>
+          </div>
+          <!-- Juli -->
+          <div class="mb-8 md:flex md:justify-start relative">
+            <!-- Titik -->
+            <div
+              class="absolute md:left-1/2 left-4 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-[#F05235] rounded-full z-10 top-2"
+            ></div>
+    
+            <!-- Konten -->
+            <div class="md:w-1/2 md:pr-6 md:text-right text-left mt-[2px] ml-10 md:ml-0">
+              <h3 class="text-[#F05235] font-semibold text-[20px]">September 2025</h3>
+              <span class="text-[14px]">09/09/2025</span>
+              <h4 class="font-semibold text-[20px] leading-tight mb-2">
+                Talkshow:Culture Meets Market: Kolaborasi CORE Indonesia dengan Urban Culture Lab of Tokyo City University
+
+              </h4>
+              <p class="text-gray-600">
+                Workshop kolaboratif yang mempertemukan mahasiswa Jepang dan UMKM Indonesia untuk mengembangkan produk kreatif berbasis budaya dan kebutuhan pasar guna mendorong kolaborasi lintas budaya dalam pengembangan prototipe inovatif melalui pertukaran budaya.
+              </p>
+            </div>
+          </div>
+
+          <!-- Oktonber -->
+          <div class="mb-8 md:flex md:justify-end relative">
+            <!-- Titik -->
+            <div
+              class="absolute md:left-1/2 left-4 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-[#F05235] rounded-full z-10 top-2"
+            ></div>
+    
+            <!-- Konten -->
+            <div class="md:w-1/2 md:pl-6 md:text-left text-left mt-[2px] ml-10 md:ml-0">
+              <h3 class="text-[#F05235] font-semibold text-[20px]">OKTOBER 2025</h3>
+              <span class="text-[14px]">09/10/2025</span>
+              <h4 class="font-semibold text-[20px] leading-tight mb-2">
+                In This Economy, Investasi Dini buat Hidup Lebih Pasti
+              </h4>
+              <p class="text-gray-600">
+                Tema ini mengajak peserta, khususnya generasi muda, agar berani memulai investasi sekarang juga dengan pemahaman yang baik mengenai literasi keuangan dan diferensiasi produk investasi
+              </p>
+            </div>
+          </div>
+
+          <!-- November-->
+          <div class="mb-8 md:flex md:justify-start relative">
+            <!-- Titik -->
+            <div
+              class="absolute md:left-1/2 left-4 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-[#F05235] rounded-full z-10 top-2"
+            ></div>
+    
+            <!-- Konten -->
+            <div class="md:w-1/2 md:pr-6 md:text-right text-left mt-[2px] ml-10 md:ml-0">
+              <h3 class="text-[#F05235] font-semibold text-[20px]">NOVEMBER 2025</h3>
+              <span class="text-[14px]">15/11/2025</span>
+              <h4 class="font-semibold text-[20px] leading-tight mb-2">
+                YES: Talkshow Empowering Youth: Smart Finance, Strategic Investment, Sustainable Business
+
+              </h4>
+              <p class="text-gray-600">
+                Youth Economic Talk 2025 hadir sebagai program edukasi interaktif berbentuk talk show, dirancang khusus untuk generasi muda Indonesia. Program ini menghadirkan narasumber yang membahas tiga fokus utama: literasi keuangan untuk membangun pondasi pengelolaan uang yang sehat, investasi portofolio mencakup manajemen investasi dan reksadana berbasis prinsip keberlanjutan, serta kisah sukses pelaku usaha di bidang waste management yang membuktikan bahwa bisnis dapat sekaligus menguntungkan dan memberikan dampak positif bagi lingkungan.
+        
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
+
+    <footer class="w-full relative xs:h-full overflow-hidden bg-[#F2F2F2]">
+      <div class="w-full max-w-[1200px] mx-auto px-2 py-[10px] relative ">
+          <p class="text-center">© 2025 youtheconomicsummit.org - All Rights Reserved</p>
+      </div>
+      <div>
+        <img
+              src="./images/foot-boot.png"
+              class=""
+            />
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+* {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+  line-height: normal;
+}
+
+.scrollbar-w-0 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-w-0::-webkit-scrollbar {
+  display: none;
+}
+
+.swiper.custom > .swiper-button-prev::after,
+.swiper.custom > .swiper-button-next::after {
+  color: white;
+  font-size: 60px;
+}
+.swiper.custom.swiper-foto > .swiper-button-prev::after,
+.swiper.custom.swiper-foto > .swiper-button-next::after {
+  color: #cdcdcd;
+}
+
+.swiper.custom .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  opacity: 1;
+}
+.swiper.custom.swiper-foto .swiper-pagination .swiper-pagination-bullet {
+  background: #cfcfcf;
+}
+.swiper.custom
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #e94e1b;
+}
+
+.swiper.custom.publikasi-about
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #b4dc02;
+}
+
+.swiper.custom.detail > .swiper-button-prev::after,
+.swiper.custom.detail > .swiper-button-next::after {
+  font-size: 20px;
+  color: #000;
+}
+
+.swiper.custom.detail > .swiper-button-prev,
+.swiper.custom.detail > .swiper-button-next {
+  background: #ffffffbe;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  top: 60%;
+}

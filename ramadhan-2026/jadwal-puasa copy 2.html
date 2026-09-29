@@ -1,0 +1,786 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal Puasa 2026</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="https://assets.suara.com/suara/desktop/images/favicon.ico/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://assets.suara.com/microsite/js/tailwindcss.3.4.3"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1D55A0",
+              junglegreen: "#27B092",
+              sandstorm: "#F4CE3F",
+              water: "#D6F5FC",
+              urobilin: "#E4BC27",
+              quicksilver: "#A6A6A6",
+              eerieblack: "#1E1E1E",
+            },
+            fontFamily: {
+                        serif: ['"Roboto Serif"', 'serif'],
+                    },
+            screens: {
+              xs: "340px",
+              // => @media (min-width: 320px)  { ... }
+
+              ssm: "500px",
+              // => @media (min-width: 640px) { ... }
+
+              sm: "640px",
+              // => @media (min-width: 640px) { ... }
+
+              md: "768px",
+              // => @media (min-width: 768px) { ... }
+
+              lg: "1024px",
+              // => @media (min-width: 1024px) { ... }
+
+              xl: "1280px",
+              // => @media (min-width: 1280px) { ... }
+
+              xxl: "1536px",
+              // => @media (min-width: 1536px) { ... }
+            },
+            
+          },
+        },
+      };
+    </script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    
+    <style>
+    @media (max-width: 395px )  { 
+      .page-jadwal {
+        height:140px!important;    
+      }
+      
+    }
+    
+
+    @media (max-width: 450px )  { 
+      .page-jadwal {
+        height:150px;    
+      }
+      .jadwal{
+        background: #1c47a8;
+      }
+      
+    }
+    @media (max-width: 600px )  { 
+      .jadwal{
+        background: #1c47a8;
+      }
+    }
+    
+    .custom-prev {
+      left: 4px;
+      top: 44%;
+      transform: translateY(-50%);
+    }
+
+    .custom-next {
+      right: 4px;
+      top: 45%;
+      transform: translateY(-50%);
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 40px;
+      height: 40px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 9999px;
+      box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 14px;
+      color: #fff;
+    }
+    .page-jadwal {
+      background-image: url('assets/images/page-reminder-new.png');
+      background-size: cover;
+      background-position: center;
+      height: 400px; 
+      max-height: 500px;
+    }
+    
+    body {
+        padding-top: 70px; /* tinggi header */
+    }
+    /* Efek zigzag / striping */
+    tbody tr:nth-child(odd) { background-color: #f9f9f9; }
+    tbody tr:nth-child(even) { background-color: #e0f7fa; }
+    @media (max-width: 370px) { 
+      body {
+        padding-top: 70px; /* tinggi header */
+      }
+      
+
+      .page-jadwal {
+        height:150px;    
+      }
+      
+    }
+    
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 0;
+      }
+
+      html, body {
+      width: 210mm;
+      height: 297mm;
+      
+      overflow: hidden !important;
+      }
+
+
+      nav, footer, button, #provinsi-select, h2, h3, #shareButton, .page-jadwal {
+        display: none !important;
+        margin: 0 !important;;
+      }
+      .logo-sponsor{
+        display: none!important;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: url('assets/images/bg-jadwal-new.jpeg') no-repeat center top;
+        background-size: cover;
+        z-index: -1;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .jadwal {
+        background: transparent !important;
+      }
+      #judul-jadwal {
+        margin: 20px 0 0 0 !important; /* kecilkan jarak bawah */
+        padding: 0 !important;
+        display: block!important;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        color: #FADB93 !important; 
+      }
+
+      table {
+        margin: 0!important;
+        padding:  0!important;
+        width: 100% !important;
+        border-collapse: collapse;
+        overflow: visible !important;
+        background: transparent !important;
+        font-size: 12px!important;
+        border: 1px solid #000!important;
+      }
+
+      th, td {
+        border: 1px solid #000!important;
+        padding: 0px;
+        text-align: center;
+        color: #000;
+        background: transparent !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      thead th {
+        background: #E43E10 !important;
+        color: #fff !important;
+        
+      }
+
+      tbody tr:nth-child(odd) td {
+        background: rgba(255,255,255,0.9) !important;
+      }
+
+      tbody tr:nth-child(even) td {
+        background: rgba(230,230,230,0.9) !important;
+      }
+      h1, h2, h3, h4, p {
+        margin-top: 0 !important;
+        margin-bottom: 0px !important;
+      }
+
+      tr {
+        page-break-inside: avoid !important;
+      }
+      #share{
+        display: none!important;
+      }
+    }
+    
+          
+  </style>
+  </head>
+  <body>
+
+     <nav
+      class="bg-white fixed flex items-center justify-center w-full  top-0 z-[50] border-b border-[#f1f1f1]"
+    >
+      <div
+        class="w-full h-[70px] max-w-[870px] flex max-md:flex-wrap items-center justify-center max-md:justify-between md:px-4 relative"
+      >
+        <a
+          href="index.html"
+          class="md:w-full h-[70px] flex items-center md:max-w-[100px]"
+        >
+          <img
+            src="assets/images/home-new.svg"
+            class="w-[27px] h-auto max-md:ml-4"
+          />
+        </a>
+        <a
+          href="https://www.suara.com/ramadan"
+          class="md:w-full h-[70px] flex items-center md:max-w-[100px] lg:hidden md:hidden"
+        >
+          <img
+            src="assets/images/logo-menu.svg"
+            class="w-[85px] h-auto max-md:ml-1"
+          />
+        </a>
+        <a
+          href="#"
+          class="hidden max-md:flex max-md:items-center max-md:mr-2 absolute max-md:right-[50px] xs:hidden"
+        >
+          <img
+            src="https://assets.suara.com/microsite/ramadan2025/icons/search.svg"
+            class="w-[27px] h-auto max-md:w-[20px]"
+          />
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex h-[70px] flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden max-md:mr-4"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div
+          class="hidden w-full md:block bg-white max-md:shadow-md"
+          id="navbar-default"
+        >
+          <ul
+            class="text-[#1F50BD] capitalize font-bold w-full text-base flex flex-col p-4 md:p-0 rounded-lg md:flex-row"
+          >
+            <li class="w-full pl-[30px] max-md:mb-4 uppercase">
+              <a href="#suarawaktu"> Suara & Waktu </a>
+            </li>
+            <li class="w-full pl-[30px] max-md:mb-4 uppercase">
+              <a href="#kebaikan"> Suara Kebaikan </a>
+            </li>
+            <li class="w-full pl-[30px]  max-md:mb-4 uppercase">
+              <a href="#inspirasi"> Suara Inspirasi </a>
+            </li>
+            <li
+              class="w-full max-w-[150px] flex justify-end max-md:justify-start max-md:mb-4 hidden"
+            >
+              <a href="#">
+                <img src="https://assets.suara.com/microsite/ramadan2025/icons/search.svg" class="w-[27px] h-auto" />
+              </a>
+            </li>
+            <li
+              class="w-full max-w-[150px] flex justify-end max-md:justify-start max-md:mb-4 xs:hidden lg:block"
+            >
+              <a href="https://www.suara.com/">
+                <img src="assets/icons/home-back-logo.svg" class="w-[27px] h-auto" />
+              </a>
+            </li>
+          </ul>
+
+          <div class="lg:hidden md:hidden sm:hidden w-full text-[#8F245E] capitalize font-bold w-full text-base">
+            <div class="items-center justify-center text-center mx-auto">
+              <a href="">
+                <img src="assets/images/partner/arkadia.png" class="hidden" />  
+              </a>  
+            </div>
+            
+            <ul class="p-[10%] grid grid-cols-3 gap-4 border-t-2 border-dashed">
+                <li>
+                  <a href="">
+                     <img src="assets/images/partner/suara.svg" class="" />   
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                     <img src="assets/images/partner/matamata.svg" class="" />   
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                     <img src="assets/images/partner/bolatimes.svg" class="" />   
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                     <img src="assets/images/partner/hitekno.svg" class="" />   
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                     <img src="assets/images/partner/dewiku.svg" class="" />   
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                     <img src="assets/images/partner/mobimoto.svg" class="" />   
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="">
+                     <img src="assets/images/partner/guideku.svg" class="" />   
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                     <img src="assets/images/partner/himedik.svg" class="" />   
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                     <img src="assets/images/partner/regional.svg" class="" />   
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                     <img src="assets/images/partner/clickmov.svg" class="" />   
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                     <img src="assets/images/partner/yoursay.svg" class="" />   
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                     <img src="assets/images/partner/serbada.svg" class="" />   
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                     <img src="assets/images/partner/theind.svg" class="" />   
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                     <img src="assets/images/partner/beritahits.svg" class="" />   
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                     <img src="assets/images/partner/iklandisini.svg" class="" />   
+                  </a>
+                </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-jadwal xs:auto pt-[70px] md:pt-[80px]">
+      
+    </section>
+
+    <!-- Jadwal -->
+    <section class="w-full justify-center items-center m-auto lg:mt-[-20px] xs:mt-[0px] jadwal">
+      <div class="w-full sm:px-[20px] w-full lg:flex xs:block justify-center text-center items-center flex-col pb-5 lg:h-[1580px] xs:h-[1380px] relative lg:bg-[#DFF0FF]">
+        <img 
+          src="assets/images/bg-jadwal-new.jpeg"
+          alt="Jadwal"
+          class="w-[80%]  lg:block xs:hidden"
+        />
+        
+        <div class="lg:absolute xs:relative m-auto lg:top-[130px] xs:top-[20px] text-center xs:p-2">
+          <h2 id="judul-jadwal" class="font-serif text-[#FADB93] block md:text-[28px] lg:text-[34px] leading-tight tracking-wide">
+            <span class="uppercase">JADWAL IMSYAKIYAH 2026</span>
+          </h2>
+          <h3 class="font-serif text-[#FADB93] block md:text-[28px] lg:text-[28px] leading-tight tracking-wide">
+            <span class="uppercase"><span class="font-semibold">RAMADHAN</span> 1447 H/2026 M</span>
+          </h3>
+          <!-- Provinsi Select -->
+          <div class="mt-4 flex justify-center gap-2 m-auto">
+            <select id="provinsi-select" class="px-4 py-2 rounded border lg:w-[300px] xs:w-[150px] text-sm"></select>
+            <button
+              onclick="loadJadwalPuasaSholat()"
+              class="bg-[#E43E10] text-white px-5 py-2 rounded text-sm hover:opacity-90"
+            >
+              Tampilkan Jadwal
+            </button>
+          </div>
+
+          <div class="flex items-center justify-between px-4 pt-8 md:hidden logo-sponsor">
+            
+            <!-- Logo Kiri -->
+            <img 
+              src="assets/images/bri-logo.png"
+              alt="BRI Logo"
+              class="h-8 w-auto object-contain"
+            />
+
+            <!-- Logo Kanan -->
+            <img 
+              src="assets/images/danatara_logo.png"
+              alt="Danatara Logo"
+              class="h-8 w-auto object-contain"
+            />
+
+          </div>
+
+          <div class="mt-0">
+            <div class="relative">
+              <div class="relative flex flex-col lg:w-[850px] lg:overflow-x-visible xs:overflow-x-scroll text-gray-700 bg-white shadow-md rounded-lg justify-center m-auto xs:mt-[40px] text-center">
+                
+                <table class="imsak w-full text-left table-fixed text-[14px]">
+                  <thead class="">
+                    <tr class="lg:bg-[#E43E10] xs:bg-[#E43E10] text-center text-[#fff]">
+                      <th class="p-3 border-slate-300 xs:text-[#fff] lg:text-[#fff xs:w-[38px]">No</th>
+                      <th class="p-3 border-slate-300 text-center xs:text-[#fff] lg:text-[#fff] xs:w-[220px]">Tanggal</th>
+                      <th class="p-3 border-slate-300 text-center xs:text-[#fff] lg:text-[#fff] xs:w-[80px]">Imsak</th>
+                      <th class="p-3 border-slate-300 text-center xs:text-[#fff] lg:text-[#fff] xs:w-[80px]">Subuh</th>
+                      <th class="p-3 border-slate-300 text-center xs:text-[#fff] lg:text-[#fff] xs:w-[80px]">Dzuhur</th>
+                      <th class="p-3 border-slate-300 text-center xs:text-[#fff] lg:text-[#fff] xs:w-[80px]">Ashar</th>
+                      <th class="p-3 border-slate-300 text-center xs:text-[#fff] lg:text-[#fff] xs:w-[80px]">Maghrib</th>
+                      <th class="p-3 border-slate-300 text-center xs:text-[#fff] lg:text-[#fff] xs:w-[80px]">Isya</th>
+                    </tr>
+                  </thead>
+                  <tbody id="jadwal-body"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex w-full justify-start gap-3 lg:relative lg:mt-[30px] xs:mt-[20px] lg:pl-[10%] xs:pl-[0] xs:m-auto lg:justify-start xs:justify-center" id="share">
+                    
+          <a onclick="downloadJadwal()"  
+            type="button"
+            class="mb-2 inline-block rounded bg-[#BE2126] px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
+            
+            <span class="[&>svg]:h-4 [&>svg]:w-4 float-left">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 18">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 1v11m0 0 4-4m-4 4L4 8m11 4v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3"/>
+              </svg>
+            </span>
+
+            <span class="pl-[4px]">Download</span>
+          </a>
+
+          <a href="javascript:void(0)" id="shareButton"
+            type="button"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+            class="mb-2 inline-block rounded bg-[#2B5DDC] px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
+              <span class="[&>svg]:h-4 [&>svg]:w-4 float-left">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-6 h-6 text-gray-800 dark:text-white" fill="none">
+                      <path fill="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z"/>
+                  </svg>
+              </span>
+              <span class="pl-[4px]">Share</span>
+          </a>
+
+          <!-- Share Links (These will be triggered by the JavaScript below) -->
+          <div
+            id="shareMenu"
+            class="hidden absolute left-[32%] mt-2 w-56 rounded-xl bg-white shadow-lg ring-1 ring-black/5 z-50"
+          >
+            <button
+              onclick="shareWhatsApp()"
+              class="flex w-full items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-green-50 hover:text-green-600 transition"
+            >
+              <span class="w-2 h-2 rounded-full bg-green-500"></span>
+              Share on WhatsApp
+            </button>
+
+            <button
+              onclick="shareTwitter()"
+              class="flex w-full items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-sky-50 hover:text-sky-500 transition"
+            >
+              <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+              Share on Twitter
+            </button>
+
+            <button
+              onclick="shareFacebook()"
+              class="flex w-full items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+            >
+              <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+              Share on Facebook
+            </button>
+
+            <button
+              onclick="shareEmail()"
+              class="flex w-full items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition rounded-b-xl"
+            >
+              <span class="w-2 h-2 rounded-full bg-gray-500"></span>
+              Share via Email
+            </button>
+          </div>
+
+        </div>
+        
+      </div>
+      </div>
+    </section>
+
+    <footer class="w-full">
+      <div
+        class="w-full bg-[#1c47a8] flex justify-center items-center min-h-[70px] max-sm:py-5"
+      >
+        <div
+          class="w-full max-w-[1000px] px-4 flex justify-between max-sm:flex-col"
+        >
+          <ul
+            class="text-white text-xs font-bold capitalize flex sm:items-center max-sm:flex-col"
+          >
+            <li class="sm:border-r border-white pr-2 mr-2 max-sm:mb-2">
+              <a href="#"> Redaksi </a>
+            </li>
+            <li class="sm:border-r border-white pr-2 mr-2 max-sm:mb-2">
+              <a href="#"> kontak </a>
+            </li>
+            <li class="sm:border-r border-white pr-2 mr-2 max-sm:mb-2">
+              <a href="#"> tentang kami </a>
+            </li>
+            <li class="sm:border-r border-white pr-2 mr-2 max-sm:mb-2">
+              <a href="#"> karir </a>
+            </li>
+            <li class="sm:border-r border-white pr-2 mr-2 max-sm:mb-2">
+              <a href="#"> pedoman media siber </a>
+            </li>
+            <li>
+              <a href="#"> site map </a>
+            </li>
+          </ul>
+          <ul class="text-white text-xs font-bold capitalize flex max-sm:mt-6">
+            <li class="mr-2">
+              <a href="#">
+                <img src="https://assets.suara.com/microsite/ramadan2025/icons/ig.svg" class="h-[23px]" />
+              </a>
+            </li>
+            <li class="mr-2">
+              <a href="#">
+                <img src="https://assets.suara.com/microsite/ramadan2025/icons/tw.svg" class="h-[23px]"
+              /></a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="https://assets.suara.com/microsite/ramadan2025/icons/titktok.svg" class="h-[23px]"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-white w-full justify-center flex items-center h-[80px]">
+        <p class="text-black text-xs">
+          © 2026 suara.com - All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>    
+    
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js"></script>
+    <script src="https://assets.suara.com/desktop/js/praytimes.js?=v10" type="text/javascript"></script>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+      
+        const kotaSelect = document.getElementById("provinsi-select");
+        const jadwalBody = document.getElementById("jadwal-body");
+        const judulJadwal = document.getElementById("judul-jadwal");
+      
+        /* ======================
+           LOAD KOTA DARI API
+        ====================== */
+        fetch("https://api.myquran.com/v2/sholat/kota/semua")
+          .then(res => res.json())
+          .then(res => {
+            kotaSelect.innerHTML = "";
+      
+            res.data.forEach(kota => {
+              const opt = document.createElement("option");
+              opt.value = kota.id;
+              opt.textContent = kota.lokasi;
+      
+              if (kota.lokasi.toLowerCase().includes("jakarta")) {
+                opt.selected = true;
+              }
+      
+              kotaSelect.appendChild(opt);
+            });
+      
+            loadJadwalPuasaSholat(); // load awal
+          })
+          .catch(err => {
+            console.error("Gagal load kota:", err);
+            kotaSelect.innerHTML = `<option value="">Error load kota</option>`;
+          });
+      
+        /* ======================
+           LOAD JADWAL RAMADHAN 30 HARI
+        ====================== */
+        window.loadJadwalPuasaSholat = function () {
+          const idKota = kotaSelect.value;
+          let namaKota = kotaSelect.options[kotaSelect.selectedIndex].text;
+      
+          // Hapus kata "KOTA" atau "KAB." di depan jika duplikat
+          namaKota = namaKota.replace(/^(KOTA|KAB\.)\s+/i, match => match.toUpperCase());
+      
+          const ramadhanStart = new Date('2026-02-18'); // 1 Ramadhan 1447
+          const ramadhanYear = 1447;
+          const totalHari = 30;
+      
+          if (!idKota) return;
+      
+          // Update judul tanpa duplikat
+          judulJadwal.innerHTML = `<span class="uppercase">JADWAL IMSYAKIYAH ${namaKota.toUpperCase()}</span>`;
+      
+          jadwalBody.innerHTML = `<tr><td colspan="8">Loading...</td></tr>`;
+      
+          const monthsToFetch = [ramadhanStart.getMonth() + 1, ramadhanStart.getMonth() + 2];
+          const year = ramadhanStart.getFullYear();
+      
+          Promise.all(
+            monthsToFetch.map(month =>
+              fetch(`https://api.myquran.com/v2/sholat/jadwal/${idKota}/${year}/${month}`)
+                .then(res => res.json())
+                .then(res => res.data.jadwal)
+            )
+          )
+          .then(results => {
+            let allJadwal = results.flat();
+            jadwalBody.innerHTML = "";
+      
+            for (let i = 0; i < totalHari; i++) {
+              const currentDate = new Date(ramadhanStart);
+              currentDate.setDate(ramadhanStart.getDate() + i);
+      
+              const dd = String(currentDate.getDate()).padStart(2, '0');
+              const mm = String(currentDate.getMonth() + 1).padStart(2, '0');
+              const yyyy = currentDate.getFullYear();
+              const tanggalText = `${dd}-${mm}-${yyyy} - ${i + 1} Ramadhan ${ramadhanYear}`;
+      
+              const dayData = allJadwal[i] || { imsak: "-", subuh: "-", dzuhur: "-", ashar: "-", maghrib: "-", isya: "-" };
+              const no = i + 1;
+      
+              jadwalBody.innerHTML += `
+                <tr>
+                  <td style="text-align:center; padding:4px;  width:10px;">${no}</td>
+                  <td style="padding:4px ; width:300px;">${tanggalText}</td>
+                  <td style="text-align:center; padding:4px">${dayData.imsak}</td>
+                  <td style="text-align:center; padding:4px">${dayData.subuh}</td>
+                  <td style="text-align:center; padding:4px">${dayData.dzuhur}</td>
+                  <td style="text-align:center; padding:4px">${dayData.ashar}</td>
+                  <td style="text-align:center; padding:4px">${dayData.maghrib}</td>
+                  <td style="text-align:center; padding:4px">${dayData.isya}</td>
+                </tr>
+              `;
+            }
+          })
+          .catch(err => {
+            console.error("Gagal load jadwal:", err);
+            jadwalBody.innerHTML = `<tr><td colspan="8">Error load jadwal</td></tr>`;
+          });
+        };
+      
+        // Update jadwal saat kota diganti
+        kotaSelect.addEventListener("change", loadJadwalPuasaSholat);
+      
+      });
+      </script>
+      <script>
+        function downloadJadwal() {
+          
+        
+          window.print();
+        }
+      </script>
+      
+      
+      <script>
+        // Function to handle share button click and show menu
+        document.getElementById('shareButton').addEventListener('click', function(event) {
+          event.preventDefault();  // Prevent default action
+          var shareMenu = document.getElementById('shareMenu');
+          shareMenu.style.display = shareMenu.style.display === 'block' ? 'none' : 'block';
+        });
+      
+        // Share on WhatsApp
+        function shareWhatsApp() {
+          var url = window.location.href;
+          var text = 'Check this out: ' + url;
+          window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank');
+        }
+      
+        // Share on Twitter
+        function shareTwitter() {
+          var url = window.location.href;
+          var text = 'Check this out!';
+          window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url), '_blank');
+        }
+      
+        // Share on Facebook
+        function shareFacebook() {
+          var url = window.location.href;
+          window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url), '_blank');
+        }
+      
+        // Share via Email
+        function shareEmail() {
+          var url = window.location.href;
+          var subject = 'Check this out!';
+          var body = 'I found something interesting: ' + url;
+          window.open('mailto:?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body), '_blank');
+        }
+      </script> 
+      
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"c619f1f9647b4599be7ee5691cf8a72f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+.head td,
+.TabListJadwal td {
+padding: 3px 0px;
+text-align: center;
+color: #000;
+font-weight: 500;
+font-size: 13px;
+}
+tbody tr td,
+tbody tr {
+border: 0px;
+}
+
+
+thead tr{
+    background:#38538a;
+}
+tbody tr:first-child td:first-child {
+border-radius: 10px 0px 0px 0px;
+}
+tbody tr:first-child td:last-child {
+border-radius: 0px 10px 0px 0px;
+}
+tbody tr:last-child td:first-child {
+border-radius: 0px 0px 0px 10px;
+}
+tbody tr:last-child td:last-child {
+border-radius: 0px 0px 10px 0px;
+}
+.bg1,
+.bg2 {
+font-weight: bold;
+}
+.bg1:not(.active) {
+background: #F8F2E9;
+}
+.bg2:not(.active) {
+background: #fff;
+}
+#jadwal-shalat {
+width: 940px;
+height: 1330px;
+margin: auto;
+}
+tbody tr:first-child td {
+background:#8B2D3C;
+color: #fff;
+font-weight: 600;
+}
+
+@media print {
+    .print-bg {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+  }

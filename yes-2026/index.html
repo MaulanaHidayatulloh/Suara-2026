@@ -1,0 +1,3699 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YES</title>
+    <link
+      rel="shortcut icon"
+      href="./images/icon-yes.svg"
+      type="image/x-icon"
+    />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Masukkan link ini di dalam tag <head> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#166866",
+            },
+            screens: {
+              xxs: "360px",
+              // => @media (min-width: 390px) { ... }
+
+              xs: "480px",
+              // => @media (min-width: 480px) { ... }
+
+              sm: "640px",
+              // => @media (min-width: 640px) { ... }
+
+              md: "768px",
+              // => @media (min-width: 768px) { ... }
+
+              lg: "1024px",
+              // => @media (min-width: 1024px) { ... }
+
+              xl: "1280px",
+              // => @media (min-width: 1280px) { ... }
+
+              "2xl": "1536px",
+              // => @media (min-width: 1536px) { ... }
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-X8KYT8LD2F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-X8KYT8LD2F");
+    </script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="bg-white fixed flex items-center justify-center w-full z-[49] shadow-[0px_6px_8px_0px_#00000026]"
+    >
+      <div
+        class="w-full lg:h-[100px] h-[70px] max-w-[1200px] flex max-lg:flex-wrap items-center justify-between lg:px-4 relative"
+      >
+        <a
+          href="index.html"
+          class="lg:w-full lg:h-[100px] h-[70px] flex items-center lg:max-w-[150px]"
+        >
+          <img
+            src="./images/logo-yes.svg"
+            class="lg:h-[68px] h-[45px] max-lg:ml-4"
+          />
+        </a>
+
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex h-[70px] flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden max-lg:mr-4"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="hidden w-full lg:max-w-[80%] max-w-[100%] lg:ml-5 lg:block bg-white max-lg:shadow-[0px_6px_8px_0px_#00000026]"
+          id="navbar-default"
+        >
+          <ul
+            class="text-[#1E1E1E] min-h-[100px] lg:items-center capitalize font-bold w-full text-sm flex justify-between flex-col p-4 lg:p-0 rounded-lg lg:flex-row"
+          >
+            <li class="max-lg:mb-4">
+              <a href="about.html"> Tentang </a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="program.html"> Program</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="agenda.html"> Agenda</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="pojok-suara.html"> Pojok suara</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="publikasi-detail.html"> Publikasi</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="data.html"> Data</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="foto-video.html"> Foto & Video</a>
+            </li>
+            <li class="flex justify-end lg:w-[25%] w-full max-lg:justify-start">
+              <div class="flex justify-between items-center lg:ml-4 lg:w-full">
+                <a href="#" class="lg:mr-4 mr-5">
+                  <img src="icons/user-circle.svg" class="w-[38px] h-auto" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/fb.svg" class="h-[17px]" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/tw.svg" class="h-[17px]" />
+                </a>
+                <a
+                  href="https://www.instagram.com/youtheconomicsummit.official/?igsh=aHoyc2pncDBzdzZx#"
+                  class="lg:mr-3 mr-5"
+                >
+                  <img src="icons/ig.svg" class="h-[17px]" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/yt.svg" class="h-[17px]" />
+                </a>
+                <a href="#">
+                  <img src="icons/tk.svg" class="h-[17px]" />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- desktop -->
+    <!-- Daftar -->
+    <section class="w-full relative xxs:pt-[50px]">
+      <img
+        src="./images/header-banner.png"
+        class="inset-0 lg:h-[100%] w-full xxs:h-[auto] object-cover"
+        alt="Background"
+      />
+
+      <div class="w-full max-w-[1200px] mx-auto px-4 relative hidden">
+        <!-- Card dengan posisi absolute di kiri -->
+        <div
+          class="absolute lg:bottom-[110px] xxs:bottom-[-12px] lg:left:[0] xxs:left-[5px] rounded-lg p-4"
+        >
+          <div class="bg-[#fff] lg:p-4 xxs:p-2 rounded-[20px]">
+            <img
+              src="./images/icon-yes.svg"
+              class="lg:w-20 xxs:w-10 mx-auto mb-4"
+            />
+            <h3 class="text-lg font-bold mb-2">
+              Mari Ikutan Semua <br />Sesi YES 2025
+            </h3>
+            <a
+              href=""
+              class="bg-[#F05235] text-white text-center lg:py-3 xxs:py-1 rounded-[30px] hover:bg-[#d6442c] transition block lg:w-[200px] xxs:w-[130px] mx-auto"
+            >
+              Daftar
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="absolute lg:bottom-[110px] xxs:bottom-[15px] lg:right-[8%] xxs:right-[8%] space-y-4"
+        >
+          <a
+            href="pendaftaran.html"
+            class="bg-[#F05235] text-white text-center lg:py-3 xxs:py-1 rounded-[30px] hover:bg-[#d6442c] transition block lg:w-[200px] xxs:w-[130px]"
+          >
+            Daftar
+          </a>
+          <a
+            href="#"
+            onclick="openModal('modalDETAIL')"
+            class="relative z-50 bg-[#D4496E] cursor-pointer text-white text-center lg:py-3 xxs:py-1 rounded-[30px] hover:bg-[#D4496E] transition block lg:w-[200px] xxs:w-[130px]"
+          >
+            Detail Events
+          </a>
+        </div>
+      </div>
+      <!-- MODAL DETAIL-->
+      <div
+        id="modalDETAIL"
+        class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50"
+      >
+        <div
+          class="bg-white w-[90%] max-w-[850px] p-14 rounded-lg relative max-h-[100%] overflow-y-auto"
+        >
+          <button
+            onclick="closeModal('modalDETAIL')"
+            class="cursor-pointer absolute top-2 right-3 text-2xl text-gray-600 hover:text-black"
+          >
+            &times;
+          </button>
+          <h2
+            class="lg:text-[28px] xxs:text-[21px] font-bold mb-4 text-[#F05235]"
+          >
+            Youth Economic Challange 
+          </h2>
+
+          <h2 class="font-semibold mt-4 mb-2">
+            The New Economy Generation: Sustain, Scale, Succeed
+          </h2>
+          <p class="text-[14px]">
+            Youth Voice Challenge hadir sebagai ajang bagi pemuda yang ingin
+            menyuarakan ide-ide perubahan melalui kreativitas digital! Dalam
+            kompetisi ini, peserta diajak untuk menuangkan kreativitas mereka
+            lewat video inspiratif dan edukatif tentang aspirasi dan gagasan
+            untuk Indonesia yang lebih baik. Kompetisi ini adalah panggilan aksi
+            bagi generasi muda untuk bersuara dalam isu-isu strategis bangsa
+            melalui lima subtema pilihan yang mencerminkan tantangan dan peluang
+            pembangunan Indonesia kedepan.
+          </p>
+          <p class="text-[14px] mt-2">
+            Generasi muda Indonesia dengan 64,16 juta pemuda (23,18% total
+            penduduk) pada data BPS 2023 merupakan aset terbesar bangsa untuk
+            membangun masa depan, dimana mereka sebagai digital natives dengan
+            51,9% Gen Z aktif di Instagram dan 185,3 juta pengguna internet yang
+            menggunakan social media untuk leisure (58,9%) dan komunikasi
+            (57,1%) memiliki kapasitas untuk menciptakan perubahan yang
+            transformatif. Sebagai future decision makers, mereka akan menjadi
+            arsitek utama dalam membentuk Indonesia masa depan. Youth Voice
+            Challenge memberikan kesempatan bagi pemuda tampil menyampaikan
+            gagasan dan aspirasi pembangunan bangsa melalui konten digital di
+            TikTok dan Instagram, menjadikan kompetisi ini momentum strategis
+            untuk mendengar aspirasi anak muda terkait pembangunan yang inklusif
+            untuk Indonesia.
+          </p>
+          <h2 class="font-semibold mt-4 mb-2">Rundown</h2>
+          <div class="overflow-x-auto">
+            <table
+              class="min-w-full border border-gray-200 divide-y divide-gray-200"
+            >
+              <thead class="bg-[#F05235]">
+                <tr>
+                  <th
+                    class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white w-[160px]"
+                  >
+                    Waktu
+                  </th>
+                  <th
+                    class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                  >
+                    Durasi
+                  </th>
+                  <th
+                    class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                  >
+                    Agenda
+                  </th>
+                  <th
+                    class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                  >
+                    Keterangan
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100">
+                <tr class="hover:bg-gray-50">
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                  >
+                    5.00-15.25
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    25’
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Pre-event Activity
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Gimmick Activity (Registrasi dan selamat datang kepada
+                    peserta)
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                  >
+                    15.25-15.55
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    30’
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Entertainment Segment
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Music  Performance
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                  >
+                    15.55-16.00
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    5’
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Opening Ceremony
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    MC Introduction (Pembukaan resmi acara)
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                  >
+                    16.00-16.07​​
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    7’
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Video Screening​
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Penayangan Kompilasi Video Terbaik
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                  >
+                    16.07-16.52​​
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    45’
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Talkshow​
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    1. Review singkat video-video peserta dari Juri  <br />2.
+                    Talkshow Mas Dandhy dan Pak Jono
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                  >
+                    16.52-17.07​
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    15’
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Diskusi
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Sesi Tanya Jawab dengan Peserta
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                  >
+                    17.07-17.22​
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    15’
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Grand Finale - Award Ceremony
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    1. Pengumuman Pemenang <br />2. Kesan pesan peserta
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                  >
+                    17.22- 17.30​
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    9’
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Penutupan Acara​
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    -​
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="font-semibold mt-6 mb-2">Timeline Lomba</h2>
+          <div class="overflow-x-auto">
+            <table
+              class="min-w-full border border-gray-200 divide-y divide-gray-200"
+            >
+              <thead class="bg-[#F05235]">
+                <tr>
+                  <th
+                    class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white w-[200px]"
+                  >
+                    Agenda
+                  </th>
+                  <th
+                    class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                  >
+                    Waktu
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100">
+                <tr class="hover:bg-gray-50">
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                  >
+                    Launch & Publikasi Lomba​
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Selasa, 5 Agustus 2025
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                  >
+                    Pendaftaran & Submit Vlog​
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    6 Agustus – 6 Oktober 2025
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                  >
+                    Seleksi Administratif​
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    7 – 10 Oktober 2025
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                  >
+                    Penjurian Tahap 1 & 2​​
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    13 – 17 Oktober 2025
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                  >
+                    Pengumuman Semi Finalis​​​
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Jumat, 20 Oktober 2025
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                  >
+                    Pengumuman Finalis​
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Selasa, 27 Oktober 2025
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                  >
+                    Penghargaan & Pemutaran di YES Summit​​
+                  </td>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                  >
+                    Sabtu, 15 November 2025
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="font-semibold mt-10 mb-2">Syarat dan Ketentuan Peserta</h2>
+          <ul class="list-disc text-left pl-5 text-sm">
+            <li>Warga Negara Indonesia</li>
+            <li>Usia 15 – 30 tahun (dibuktikan dengan KTP/Kartu Pelajar)</li>
+            <li>
+              Setiap peserta hanya boleh mengirimkan satu (1) video untuk satu
+              tema
+            </li>
+            <li>Bukan karyawan CORE Indonesia dan keluarga</li>
+            <li>Lomba tidak dipungut biaya</li>
+            <li>Peserta dibolehkan individu atau kelompok</li>
+            <li>Untuk peserta kelompok maksimal beranggotakan 3 orang</li>
+            <li>Memiliki akun aktif Instagram</li>
+            <li>
+              Bersedia menghadiri acara YES 2025 jika terpilih sebagai finalis
+            </li>
+          </ul>
+
+          <h2 class="font-semibold mt-8 mb-2">Tema kampanye</h2>
+          <ul class="list-disc text-left pl-5 text-sm">
+            <li>
+              Aksi Muda untuk Ekonomi Lokal - Inisiatif pemberdayaan ekonomi
+              masyarakat dan UMKM
+            </li>
+            <li>
+              Gaya Hidup Berkelanjutan ala Anak Muda - Lifestyle sustainability
+              yang praktis dan accessible
+            </li>
+            <li>
+              Bisnis dengan Misi Sosial - Social entrepreneurship dan impact
+              business
+            </li>
+            <li>
+              Pemuda Melestarikan Alam dan Budaya - Konservasi lingkungan dan
+              pelestarian budaya lokal
+            </li>
+            <li>
+              Suara Muda untuk Ekonomi yang Adil dan Inklusif - Ide-ide economic
+              empowerment dan social justice
+            </li>
+          </ul>
+
+          <h2 class="font-semibold mt-8 mb-2">Ketentuan Umum</h2>
+          <ul class="list-disc text-sm text-left pl-5">
+            <li>
+              Menggunakan Bahasa Indonesia sebagai bahasa utama. Video yang
+              menggunakan bahasa daerah, bahasa asing, atau bahasa isyarat wajib
+              menyertakan subtitle/terjemahan dalam Bahasa Indonesia yang jelas
+              dan terbaca.
+            </li>
+            <li>
+              Tidak mengandung unsur SARA, pornografi, radikalisme, kekerasan,
+              dan/atau nilai-nilai yang melanggar aturan/hukum/norma yang
+              berlaku di Indonesia
+            </li>
+            <li>
+              Karya bersifat orisinal, bukan plagiasi, tidak melanggar hak
+              kekayaan intelektual pihak manapun, dan belum pernah dipublikasi
+              atau dilombakan sebelumnya
+            </li>
+            <li>Tidak menggunakan musik atau konten berlisensi tanpa izin</li>
+            <li>
+              Karya pemenang dapat digunakan CORE Indonesia untuk kepentingan
+              promosi dan edukasi dengan tetap mencantumkan kredit kepada
+              pembuat
+            </li>
+            <li>
+              Keputusan dewan juri bersifat mutlak dan tidak dapat diganggu
+              gugat
+            </li>
+          </ul>
+
+          <h2 class="font-semibold mt-8 mb-2">Ketentuan Lainnya</h2>
+          <ul class="list-disc text-sm text-left pl-5">
+            <li>
+              Hak Cipta: Peserta menjamin bahwa karya yang di submit adalah
+              karya orisinil dan tidak melanggar hak cipta pihak manapun
+            </li>
+            <li>
+              Penggunaan Karya: CORE Indonesia berhak menggunakan karya pemenang
+              untuk kepentingan promosi, edukasi, dan kampanye dengan tetap
+              mencantumkan kredit pembuat
+            </li>
+            <li>
+              Karya bersifat orisinal, bukan plagiasi, tidak melanggar hak
+              kekayaan intelektual pihak manapun, dan belum pernah dipublikasi
+              atau dilombakan sebelumnya
+            </li>
+            <li>
+              Diskualifikasi: Panitia berhak mendiskualifikasi peserta yang
+              melanggar ketentuan atau terbukti melakukan kecurangan
+            </li>
+          </ul>
+
+          <h2 class="font-semibold mt-6">Pendaftaran dan Pengiriman Karya</h2>
+          <h2 class="font-semibold mt-6 mb-2">Tahap Pendaftaran:</h2>
+          <ul class="list-decimal list-outside pl-6 text-left text-sm">
+            <li>
+              Peserta wajib mengisi formulir pendaftaran melalui website resmi:
+              <a href="" class="text-[#F05235]">www.youtheconomicsummit.org/</a
+              > 
+            </li>
+            <li>Upload dokumen identitas (KTP/Kartu Pelajar)</li>
+            <li>Menyertakan synopsis/deskripsi video (maksimal 200 kata)</li>
+          </ul>
+          <h2 class="font-bold mt-6 mb-2">Tahap Pengiriman:</h2>
+          <ul class="list-decimal list-outside pl-6 text-left text-sm">
+            <li>
+              Upload di Platform:
+              <ul class="list-disc pl-6 mt-1">
+                <li>
+                  Instagram: Upload di reels sesuai ketentuan yang telah
+                  ditetapkan.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Tambahkan kolaborator di Akun:
+              <ul class="list-disc pl-6 mt-1">
+                <li>
+                  Instagram:
+                  <span class="font-semibold"
+                    >@youtheconomicsummit.official @core_indonesia @suaradotcom
+                    @ruanggagasan.core</span
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              Wajib Follow:
+              <ul class="list-disc pl-6 mt-1">
+                <li>
+                  Instagram:
+                  <span class="font-semibold"
+                    >@youtheconomicsummit.official</span
+                  >
+                </li>
+                <li>
+                  @core_indonesia
+                  <span class="font-semibold"
+                    >@suaradotcom @ruanggagasan.core</span
+                  >
+                </li>
+                <li>
+                  TikTok:
+                  <span class="font-semibold">@coreindonesia.official</span>
+                </li>
+                <li>
+                  YouTube: <span class="font-semibold">CORE Indonesia</span>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Submit Link:
+              <ul class="list-disc pl-6 mt-1">
+                <li>
+                  Kirimkan link video yang telah diupload melalui form di
+                  website
+                  <a href="" class="text-[#F05235]"
+                    >www.youtheconomicsummit.org/</a
+                  >
+                </li>
+                <li>Sertakan screenshot bukti upload dan engagement awal</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2 class="mt-2 font-semibold">Ketentuan Akun:</h2>
+          <ul class="list-decimal list-outside pl-6 text-justify mt-2 text-sm">
+            <li>Akun sosial media peserta tidak diperkenankan private</li>
+            <li>Menggunakan akun asli (bukan fake account/second account)</li>
+            <li>Video tidak boleh dihapus hingga pengumuman pemenang</li>
+          </ul>
+          <h2 class="mt-6 font-semibold">Hadiah</h2>
+          <p class="text-[14px] mt-2">
+            Kompetisi ini menyediakan total hadiah sebesar Rp16.500.000,00, yang
+            terbagi sebagai berikut:
+          </p>
+          <ul class="list-disc text-sm text-left pl-5">
+            <li>Juara 1 : Rp5.000.000,00</li>
+            <li>Juara 2 : Rp4.000.000,00</li>
+            <li>Juara 3 : Rp3.000.000,00</li>
+            <li>Juara Favorit : Rp1.500.000,00</li>
+            <li>6 Finalis : Rp500.000,00</li>
+          </ul>
+          <h2 class="mt-6 font-semibold">Kontak dan Informasi</h2>
+          <p class="text-sm mt-2">
+            CORE Indonesi, Jl. Tebet Barat Dalam Raya No. 76A, Jakarta Selatan,
+            Indonesia 12810 <br />Website:
+          </p>
+          <p class="font-semibold mt-1">core-indonesia.com</p>
+          <a
+            href=""
+            class="mt-5 bg-[#F05235] text-white text-center lg:py-3 xxs:py-1 rounded-[30px] hover:bg-[#d6442c] transition block lg:w-[180px] xxs:w-[130px] mx-auto"
+          >
+            Daftar
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- desktop -->
+    <div class="w-full relative bg-[#FEFBEF] block lg:hidden hidden">
+      <div class="w-full max-w-[1200px] mx-auto py-[40px]">
+        <div class="w-[90%] lg:w-[70%] mx-auto py-10">
+          <div class="relative pb-[56.25%] h-0 overflow-hidden">
+            <iframe
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/kMJnPub5uao?si=8iFkoH9LdNKkpEyQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="mt-4 text-center">
+            “Youth Economic Summit merupakan program tahunan CORE Indonesia
+            berkolaborasi dengan Suara.com guna melibatkan kaum muda untuk
+            berpartisipasi secara aktif mendukung kemajuan melalui perekonomian
+            nasional agar tumbuh tinggi dan inklusif”
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- desktop -->
+    <!-- Content -->
+    <section class="w-full relative block lg:block xxs:hidden bg-[#56b4b9]">
+      <div class="w-full max-w-[1200px] mx-auto px-4 py-[40px] relative">
+        <h2
+          class="lg:text-[36px] xs:text-[25px] text-[16px] text-white mb-[20px] font-bold text-center"
+        >
+          Content
+        </h2>
+        <div class="w-full grid lg:grid-cols-3 grid-cols-1 gap-2 relative">
+          <!-- grid 1 -->
+          <div class="text-center md:text-[20px] text-sm p-2">
+            <div
+              class="text-[16px] text-left p-5 md:text-sm text-xs rounded-b-[20px] lg:h-[420px] xs:h-[350px] relative"
+            >
+              <div
+                onclick="openModal('modalYEO')"
+                class="bg-[#fff] rounded-[20px] lg:h-[380px] xs:h-[320px] p-4"
+              >
+                <div
+                  class="bg-[#F05235] rounded-[20px] flex justify-center p-4"
+                >
+                  <img src="./images/icon-yeo.svg" alt="" width="80" />
+                  <p class="pl-3 font-bold text-white">
+                    YOUTH <br />ECONOMIC <br />OUTLOOK 
+                  </p>
+                </div>
+                <div>
+                  <p class="py-6 text-center text-[14px]">
+                    Sesi pembuka berformat panel diskusi berbasis data dan tren,
+                    membantu peserta memahami arah ekonomi 2026-2027 dan
+                    perubahan dunia kerja.
+                  </p>
+                </div>
+                <div
+                  class="bg-[#56B4B9] rounded-[20px] p-4 justify-center text-center text-white hidden"
+                >
+                  <span></span>
+                  <p class="font-bold">Selengkapnya</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MODAL 1-->
+          <div
+            id="modalYEO"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50"
+          >
+            <div
+              class="bg-white w-[90%] max-w-[850px] p-14 rounded-lg relative max-h-[90vh] overflow-y-auto"
+            >
+              <button
+                onclick="closeModal('modalYEO')"
+                class="absolute top-2 right-3 text-2xl text-gray-600 hover:text-black"
+              >
+                &times;
+              </button>
+              <h2
+                class="lg:text-[28px] xxs:text-[21px] font-bold mb-4 text-[#F05235]"
+              >
+                Youth Economic Outlook
+              </h2>
+              <p class="mb-4 font-semibold">
+                Indonesia at a Crossroads: Empowering Youth to Accelerate
+                Economic Transformation
+              </p>
+              <p class="text-[14px]">
+                Diskusi interaktif yang ditujukan untuk anak muda, mengenai
+                prediksi kondisi perekonomian Indonesia di tahun mendatang dari
+                perspektif makroekonomi dan sektoral*, dengan mempertimbangkan
+                isu-isu penting seperti: 
+              </p>
+              <ul class="text-[#F05235] font-bold py-3">
+                <li class="font-semibold">- Green Economy </li>
+                <li class="font-semibold">- Digital Economy</li>
+                <li class="font-semibold">- Hilirasi</li>
+              </ul>
+              <h2 class="font-semibold">Tujuan</h2>
+              <p class="text-[14px]">
+                Mengedukasi dan melibatkan anak muda dalam memahami dan
+                membentuk arah perekonomian Indonesia ke depan yang inklusif dan
+                berkelanjutan. 
+              </p>
+              <h2 class="font-semibold mt-4">Outcome</h2>
+              <p class="text-[14px]">
+                Terciptanya generasi muda yang sadar, kritis, serta berperan
+                aktif dalam membentuk arah pembangunan ekonomi Indonesia yang
+                berkelanjutan.​ 
+              </p>
+              <h2 class="font-semibold mt-4">Output</h2>
+              <p class="text-[14px]">
+                Press release hasil diskusi bersama anak muda dan rekomendasi
+                kebijakan untuk memperkuat perekonomian Indonesia yang
+                berkelanjutan.​​
+              </p>
+              <h2 class="font-semibold mt-4">Kenapa Anak Muda?​</h2>
+              <p class="text-[14px]">
+                Sebagai calon pengambil kebijakan, anak muda perlu memahami
+                dinamika ekonomi sejak dini agar tumbuh kritis, peduli, dan siap
+                terlibat dalam pembangunan, bukan justru menjadi korban dari
+                praktik ekonomi yang tidak berkelanjutan.​​​
+              </p>
+              <h2 class="font-semibold mt-4">MC :​​</h2>
+              <p class="text-[14px]">
+                Praktisi komunikasi yang telah berpengalaman memandu berbagai
+                acara formal maupun informal​
+              </p>
+              <h2 class="font-semibold mt-4">Moderator :​ ​​</h2>
+              <p class="text-[14px]">
+                Influencer muda yang fokus dengan isu-isu ekonomi yang
+                keberlanjutan​.
+              </p>
+              <h2 class="font-semibold mt-4">Panelis :​ </h2>
+              <p class="text-[14px]">
+                Muhammad Ishak & Yusuf Rendy Manilet (CORE Indonesia), Andhyta
+                Firselly Utami (TBC, Pendiri dan CEO Think Policy)
+              </p>
+              <p class="text-[14px]">
+                Kegiatan ini akan dihadiri lebih 400 anak muda yang berasal dari
+                berbagai latar belakang​.
+              </p>
+              <h2 class="font-semibold mt-4">Rundown</h2>
+
+              <div class="overflow-x-auto">
+                <table
+                  class="min-w-full border border-gray-200 divide-y divide-gray-200"
+                >
+                  <thead class="bg-[#F05235]">
+                    <tr>
+                      <th
+                        class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white w-[200px] block"
+                      >
+                        Waktu
+                      </th>
+                      <th
+                        class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                      >
+                        Durasi
+                      </th>
+                      <th
+                        class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                      >
+                        Acara
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-100">
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                      >
+                        08.50-09.30
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        40’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Registrasi & Memasuki ruangan
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                      >
+                        09.30-09.35
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        5’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Pembukaan Acara oleh MC​
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                      >
+                        09.35-09.40​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        5’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Menyanyikan lagu Indonesia Raya​​
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                      >
+                        09.40-09.50​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        10’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Welcoming Speech oleh Bapak Mohammad Faisal Direktur
+                        Eksekutif, CORE Indonesia​
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                      >
+                        09.50-10.05​​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        15’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Keynote Speech oleh Bapak Pandu Patria Sjahrir* Chief
+                        Investment Officer (CIO), Danantara​
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                      >
+                        10.05-10.10​​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        5’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Launching Buku Ruang Gagasan​
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                      >
+                        10.10-10.15​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        5’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Penyerahan Cinderamata dan Foto Bersama Keynote
+                        Speaker​​
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                      >
+                        10.15-10.20​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        5’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Penyerahan Acara dari MC dan Pembukaan oleh Moderator
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[200px]"
+                      >
+                        10.20-11.20​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        60’​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Panel Session “Indonesia at a Crossroads: Empowering
+                        Youth to Accelerate Economic Transformation” <br />1.
+                        Yusuf R Manilet Strategic Research Manager, CORE
+                        Indonesia <br />2. Azhar Syahida Strategic Researcher
+                        Assistant, CORE Indonesia <br />3. Dipo Satria Ramli
+                        Ekonom Muda, Universitas Indonesia <br />4. Jeany
+                        Hartriani Co-Initiator and Deputy Head of Katadata Green
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        11.20-11.40​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        20’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Sesi Tanya Jawab
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        11.40-11.45​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        5’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Closing Remarks per Narasumber
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        11.45-11.55​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        10’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Foto bersama seluruh peserta acara​
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        11.55-12.00​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        5’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Penutupan Acara​
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <a
+                href=""
+                class="mt-5 bg-[#F05235] text-white text-center lg:py-3 xxs:py-1 rounded-[30px] hover:bg-[#d6442c] transition block lg:w-[180px] xxs:w-[130px] mx-auto"
+              >
+                Daftar
+              </a>
+            </div>
+          </div>
+
+          <!-- grid 2 -->
+          <div class="text-center md:text-[20px] text-sm p-2">
+            <div
+              class="text-[16px] text-left p-5 md:text-sm text-xs rounded-b-[20px] lg:h-[420px] xs:h-[350px] relative"
+            >
+              <div
+                onclick="openModal('modalTALK')"
+                class="bg-[#fff] rounded-[20px] lg:h-[380px] xs:h-[320px] p-4"
+              >
+                <div
+                  class="bg-[#F05235] rounded-[20px] flex p-4 justify-center"
+                >
+                  <img src="./images/icon-yet.svg" alt="" width="80" />
+                  <p class="pl-3 font-bold text-white">
+                    YOUTH <br />ECONOMIC <br />TALK
+                  </p>
+                </div>
+                <div>
+                  <p class="py-6 text-center">
+                    Talkshow konversasional sebagai sesi penutup yang menyiapkan
+                    peserta memanfaatkan peluang kerja dan membangun jalur
+                    karier, sekaligus mempertemukan kembali seluruh peserta
+                    dalam satu ruangan sebagai penutup bersama.
+                  </p>
+                </div>
+                <div
+                  class="bg-[#56B4B9] rounded-[20px] p-4 justify-center text-center text-white hidden"
+                >
+                  <span></span>
+                  <p class="font-bold">Selengkapnya</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MODAL 2-->
+          <div
+            id="modalTALK"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50"
+          >
+            <div
+              class="bg-white w-[90%] max-w-[850px] p-14 rounded-lg relative max-h-[90vh] overflow-y-auto"
+            >
+              <button
+                onclick="closeModal('modalTALK')"
+                class="absolute top-2 right-3 text-2xl text-gray-600 hover:text-black"
+              >
+                &times;
+              </button>
+              <h2
+                class="lg:text-[28px] xxs:text-[21px] font-bold mb-4 text-[#F05235]"
+              >
+                Youth Economic Talk
+              </h2>
+              <p class="mb-4 font-semibold">
+                Empowering Youth: Smart Finance, Strategic Investment,
+                Sustainable Business
+              </p>
+              <p class="text-[14px]">
+                Youth Economic Talk 2025 hadir sebagai program edukasi
+                interaktif berbentuk talk show, dirancang khusus untuk generasi
+                muda Indonesia. Program ini menghadirkan narasumber yang
+                membahas tiga fokus utama: literasi keuangan untuk membangun
+                pondasi pengelolaan uang yang sehat, investasi portofolio
+                mencakup manajemen investasi dan reksadana berbasis prinsip
+                keberlanjutan, serta kisah sukses pelaku usaha di bidang waste
+                management yang membuktikan bahwa bisnis dapat sekaligus
+                menguntungkan dan memberikan dampak positif bagi lingkungan.
+              </p>
+
+              <h2 class="font-semibold mt-4">Tujuan</h2>
+              <ul class="list-disc pl-6 space-y-2 text-sm">
+                <li>
+                  Literasi Keuangan yang Kuat: Peserta akan dibekali kemampuan
+                  mengelola keuangan pribadi secara efektif, memahami strategi
+                  pengelolaan risiko, dan membangun fondasi finansial yang solid
+                  sebagai modal untuk melangkah ke dunia investasi maupun
+                  bisnis.
+                </li>
+                <li>
+                  Strategi Investasi Portofolio:  Peserta akan mempelajari cara
+                  memilih instrumen investasi yang sesuai profil risiko,
+                  mengenali peluang menguntungkan di sektor berkelanjutan, dan
+                  menyusun portofolio yang mampu memberikan imbal hasil optimal
+                  dalam jangka panjang.
+                </li>
+                <li>
+                  Strategi Investasi Portofolio:  Peserta akan mempelajari cara
+                  memilih instrumen investasi yang sesuai profil risiko,
+                  mengenali peluang menguntungkan di sektor berkelanjutan, dan
+                  menyusun portofolio yangInspirasi & Panduan Bisnis Nyata: 
+                  Melalui pengalaman langsung pelaku usaha di sektor pengelolaan
+                  limbah, peserta akan mendapatkan wawasan praktis tentang
+                  memulai, mengembangkan, dan mempertahankan bisnis yang tidak
+                  hanya menguntungkan tetapi juga memberikan dampak positif bagi
+                  lingkungan.
+                </li>
+              </ul>
+              <h2 class="font-semibold mt-4">Outcome​</h2>
+              <p class="text-[14px]">
+                “Peserta memperoleh materi edukasi, akses ke jejaring strategis,
+                dan panduan praktis investasi serta bisnis berkelanjutan".
+              </p>
+              <h2 class="font-semibold mt-4">Output​</h2>
+              <p class="text-[14px]">
+                “Peserta terdorong untuk memulai investasi cerdas, mengembangkan
+                usaha ramah lingkungan, dan berkontribusi pada pertumbuhan
+                ekonomi hijau.”
+              </p>
+              <p class="text-[14px] mt-5">Peserta: 400 orang​</p>
+              <p class="text-[14px]">Hari: Sabtu, 15 November 2025​​</p>
+              <p class="text-[14px]">Waktu: 13.30 – 15.00 WIB​​​</p>
+              <h2 class="font-semibold mt-4">Panelis</h2>
+
+              <div class="overflow-x-auto">
+                <table
+                  class="min-w-full border border-gray-200 divide-y divide-gray-200"
+                >
+                  <thead class="bg-[#F05235]">
+                    <tr>
+                      <th
+                        class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white w-[180px]"
+                      >
+                        Nama
+                      </th>
+                      <th
+                        class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                      >
+                        Jabatan/Posisi
+                      </th>
+                      <th
+                        class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                      >
+                        Topik
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-100">
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[180px]"
+                      >
+                        Lolita Setyawati
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Certified Financial Planner & Co-founder Daya Uang
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Literasi Keuangan
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[180px]"
+                      >
+                        Ni Putu Kurniasari
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Chief Operating Officer at Bareksa
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Investasi Portofolio
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[180px]"
+                      >
+                        Arky Gilang​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        CEO Greenprosa
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Pelaku Usaha​
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h2 class="font-semibold mt-4">Rundown</h2>
+              <div class="overflow-x-auto">
+                <table
+                  class="min-w-full border border-gray-200 divide-y divide-gray-200"
+                >
+                  <thead class="bg-[#F05235]">
+                    <tr>
+                      <th
+                        class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white w-[160px]"
+                      >
+                        Waktu
+                      </th>
+                      <th
+                        class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                      >
+                        Durasi
+                      </th>
+                      <th
+                        class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                      >
+                        Agenda
+                      </th>
+                      <th
+                        class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                      >
+                        Keterangan
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-100">
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        12.00-12.30
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        30’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Ishomah
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Check-in peserta ​ Networking awal & foto booth
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        12.00-12.30
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        50’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Registrasi & Welcome ​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Welcome remarks MC ​
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        13.30 - 13.35
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        5’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Opening & MC Introduction ​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Pengenalan konsep YET 2025 & Brief introduction
+                        moderator​
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        13.35 - 13.40
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        5’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Moderator menjelaskan konsep YET 2025
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Pengenalan konsep YET 2025 & Brief introduction 3
+                        narasumber​
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        13.40 - 13.50
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        10’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Segmen 1: Literasi Keuangan
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Moderator <br />𝑳𝒐𝒍𝒊𝒕𝒂 𝑺𝒆𝒕𝒚𝒂𝒘𝒂𝒕𝒊 (Certified Financial
+                        Planner & Co-founder Daya Uang)*tbc ​
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        13.50 - 14.00 ​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        10’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Segmen 2: Investasi Portofolio
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Ni Putu Kurniasari (Chief of Operating Officer at
+                        Bareksa) ​
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        14.00 - 14.10 ​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        10’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Segmen 3: Pelaku usaha
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Arky Gilang (CEO Greenprosa) ​
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        14.10 - 14.50 ​ ​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        40’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Sesi QnA oleh Moderator
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        MC recap 3 poin utama setiap segmen ​
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        14.50 - 14.55 ​ ​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        5’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Key Takeaways & Summary ​oleh Moderator
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Sesi foto bersama​ ​
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        14.55 - 15.00 ​ ​
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        5’
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Closing & Community Building oleh MC
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Sesi foto bersama​ ​
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <a
+                href=""
+                class="mt-5 bg-[#F05235] text-white text-center lg:py-3 xxs:py-1 rounded-[30px] hover:bg-[#d6442c] transition block lg:w-[180px] xxs:w-[130px] mx-auto"
+              >
+                Daftar
+              </a>
+            </div>
+          </div>
+
+          <!-- grid 3 -->
+          <div class="text-center md:text-[20px] text-sm p-2">
+            <div
+              class="text-[16px] text-left p-5 md:text-sm text-xs rounded-b-[20px] lg:h-[420px] xs:h-[350px] relative"
+            >
+              <div
+                onclick="openModal('modalYES')"
+                class="bg-[#fff] rounded-[20px] lg:h-[380px] xs:h-[320px] p-4"
+              >
+                <div
+                  class="bg-[#F05235] rounded-[20px] flex p-4 justify-center"
+                >
+                  <img src="./images/icon-yes1.svg" alt="" width="80" />
+                  <p class="pl-3 font-bold text-white">
+                    YOUTH <br />ECONOMIC <br />SUMMIT
+                  </p>
+                </div>
+                <div>
+                  <p class="py-6 text-center">
+                    workshop interaktif yang terbagi dalam beberapa kelompok,
+                    membekali peserta dengan keterampilan praktis di bidang
+                    creator economy, ekonomi kreatif, dan literasi finansial.
+                  </p>
+                </div>
+                <!-- <div class="bg-[#56B4B9] rounded-[20px] p-4 justify-center text-center text-white">
+                <span>Jam</span>
+                <p class="font-bold">15:30 - 17:30 WIB</p>
+              </div> -->
+                <div
+                  class="bg-[#56B4B9] rounded-[20px] p-4 justify-center text-center text-white hidden"
+                >
+                  <span></span>
+                  <p class="font-bold">Selengkapnya</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MODAL 3-->
+          <div
+            id="modalYES"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50"
+          >
+            <div
+              class="bg-white w-[90%] max-w-[850px] p-14 rounded-lg relative max-h-[90vh] overflow-y-auto"
+            >
+              <button
+                onclick="closeModal('modalYES')"
+                class="absolute top-2 right-3 text-2xl text-gray-600 hover:text-black"
+              >
+                &times;
+              </button>
+              <h2
+                class="lg:text-[28px] xxs:text-[21px] font-semibold mb-4 text-[#F05235]"
+              >
+                Youth Economic Summit 2025 
+              </h2>
+
+              <p class="text-[14px]">
+                Youth Economics Summit (YES) adalah acara puncak tahunan dari
+                rangkaian program youth engagement yang telah diselenggarakan
+                sepanjang tahun untuk menampung aspirasi generasi muda tentang
+                isu-isu ekonomi Indonesia. Acara ini digagas sebagai bentuk
+                apresiasi untuk suara-suara anak muda yang telah berkontribusi
+                menyampaikan gagasan dan ide-ide inovatif melalui berbagai
+                platform diskusi yang diselenggarakan CORE Indonesia, termasuk
+                apresiasi kepada peserta Youth Voice Challenge yang telah
+                berpartisipasi dalam kampanye tantangan iklim dan ekonomi
+                berkelanjutan.
+              </p>
+              <p class="text-[14px] mt-2">
+                Acara YES terdiri dari tiga sesi utama: Youth Economics Outlook
+                yang mengulas kondisi ekonomi setahun terakhir dan proyeksi
+                tahun depan, talkshow yang membahas hasil-hasil Ruang Gagasan
+                bulanan dengan menghadirkan narasumber ahli dan praktisi
+                ekonomi, serta pengumuman pemenang lomba konten kreator Youth
+                Voice Challenge 2025 yang diakhiri dengan sesi hiburan musik
+                dari artis dan performer muda. Program ini dirancang sebagai
+                forum apresiasi yang menghubungkan gagasan generasi muda dengan
+                berani mengambil langkah dan bersuara, sekaligus memberikan
+                ruang hiburan dan networking dalam suasana yang menyenangkan
+                bagi generasi muda.​
+              </p>
+              <p class="text-[14px] mt-2">
+                YES sebagai bentuk kolaborasi CORE Indonesia dengan Suara.com,
+                ingin mewujudkan misi komunikasi masa dan platfrom digital yang
+                edukatif dan sinergis kepada kaum muda.
+              </p>
+              <h2 class="font-semibold mt-4">Lokasi Acara​</h2>
+              <p class="text-[14px]">Radio Republik Indonesia (RRI)</p>
+              <p class="text-[14px]">
+                Jl. Medan Merdeka Barat No.4-5 2, RT.2/RW.3, Gambir, Kecamatan
+                Gambir, Kota Jakarta Pusat, Daerah <br />Khusus Ibukota Jakarta
+                10110
+              </p>
+              <h2 class="font-semibold mt-4">Waktu​</h2>
+              <p class="text-[14px]">
+                Sabtu, 15 November 2025 08.50 – 17.30 WIB
+              </p>
+              <h2 class="font-semibold mt-4">Rundown Keseluruhan Acara</h2>
+              <div class="overflow-x-auto">
+                <table
+                  class="min-w-full border border-gray-200 divide-y divide-gray-200"
+                >
+                  <thead class="bg-[#F05235]">
+                    <tr>
+                      <th
+                        class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white w-[160px]"
+                      >
+                        Nama
+                      </th>
+                      <th
+                        class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                      >
+                        Acara
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-100">
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        08.50 – 09.30
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Registrasi & Memasuki Ruangan Pembukaan Youth Economic
+                        Summit 2025
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        09.30 – 12.00
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Youth Economic Outlook 2026
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        12.00 - 12.30
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        ISHOMA
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        12.30 – 15.00
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Youth Economic Talk
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                      >
+                        15.00 – 17.30
+                      </td>
+                      <td
+                        class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                      >
+                        Youth Voice Challenge
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <a
+                href=""
+                class="mt-5 bg-[#F05235] text-white text-center lg:py-3 xxs:py-1 rounded-[30px] hover:bg-[#d6442c] transition block lg:w-[180px] xxs:w-[130px] mx-auto"
+              >
+                Daftar
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mobile -->
+    <!-- Content -->
+    <section class="w-full relative block lg:hidden">
+      <img
+        src="./images/bg-content.png"
+        class="absolute inset-0 h-full w-full object-cover"
+        alt="Background"
+      />
+
+      <div class="w-full max-w-[1200px] mx-auto px-4 py-[40px] relative">
+        <h2
+          class="lg:text-[36px] xs:text-[25px] text-[16px] text-white mb-[20px] font-bold text-center"
+        >
+          Content
+        </h2>
+
+        <!-- Swiper Container -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide text-center text-sm p-2">
+              <div
+                class="text-[16px] text-left p-5 md:text-sm text-xs rounded-b-[20px] xs:h-[350px] relative"
+              >
+                <div
+                  onclick="openModal('modalYEOMobile')"
+                  class="bg-[#fff] cursor-pointer rounded-[20px] xs:h-[320px] p-4"
+                >
+                  <div
+                    class="bg-[#F05235] rounded-[20px] flex justify-center p-4"
+                  >
+                    <img src="./images/icon-yeo.svg" alt="" width="80" />
+                    <p class="pl-3 font-bold text-white">
+                      YOUTH <br />ECONOMIC <br />OUTLOOK
+                    </p>
+                  </div>
+
+                  <p class="py-6 text-center">
+                    Sesi pembuka berformat panel diskusi berbasis data dan tren,
+                    membantu peserta memahami arah ekonomi 2026-2027 dan
+                    perubahan dunia kerja.
+                  </p>
+                  <div
+                    class="bg-[#56B4B9] rounded-[20px] p-4 justify-center text-center text-white"
+                  >
+                    <span>Jam</span>
+                    <p class="font-bold">Selengkapnya</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide text-center text-sm p-2">
+              <div
+                class="text-[16px] text-left p-5 md:text-sm text-xs rounded-b-[20px] xs:h-[350px] relative"
+              >
+                <div
+                  onclick="openModal('modalTALKMobile')"
+                  class="bg-[#fff] rounded-[20px] xs:h-[320px] p-4"
+                >
+                  <div
+                    class="bg-[#F05235] rounded-[20px] flex justify-center p-4"
+                  >
+                    <img src="./images/icon-yet.svg" alt="" width="80" />
+                    <p class="pl-3 font-bold text-white">
+                      YOUTH <br />ECONOMIC <br />TALK
+                    </p>
+                  </div>
+                  <p class="py-6 text-center">
+                    Talkshow konversasional sebagai sesi penutup yang menyiapkan peserta memanfaatkan peluang kerja dan membangun jalur karier, sekaligus mempertemukan kembali seluruh peserta dalam satu ruangan sebagai penutup bersama.
+                  </p>
+                  <div
+                    class="bg-[#56B4B9] rounded-[20px] p-4 justify-center text-center text-white"
+                  >
+                    <span>Jam</span>
+                    <p class="font-bold">Selengkapnya</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide text-center text-sm p-2">
+              <div
+                class="text-[16px] text-left p-5 md:text-sm text-xs rounded-b-[20px] xs:h-[350px] relative"
+              >
+                <div
+                  onclick="openModal('modalYESMobile')"
+                  class="bg-[#fff] rounded-[20px] xs:h-[320px] p-4"
+                >
+                  <div
+                    class="bg-[#F05235] rounded-[20px] flex justify-center p-4"
+                  >
+                    <img src="./images/icon-yes1.svg" alt="" width="80" />
+                    <p class="pl-3 font-bold text-white">
+                      YOUTH <br />ECONOMIC <br />SUMMIT
+                    </p>
+                  </div>
+                  <p class="py-6 text-center">
+                    Workshop interaktif yang terbagi dalam beberapa kelompok, membekali peserta dengan keterampilan praktis di bidang creator economy, ekonomi kreatif, dan literasi finansial.
+                  </p>
+                  <div
+                    class="bg-[#56B4B9] rounded-[20px] p-4 justify-center text-center text-white"
+                  >
+                    <span>Jam</span>
+                    <p class="font-bold">Selengkapnya</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Optional Pagination -->
+          <div class="swiper-pagination mt-4"></div>
+        </div>
+
+        <!-- Modals (tetap di luar slider) -->
+        <!-- Paste the MODAL YEO, TALK, and YES here – sama persis seperti yang kamu sudah punya -->
+      </div>
+    </section>
+
+    <!-- Modal Mobile 1: Youth Economic Outlook -->
+    <div
+      id="modalYEOMobile"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50"
+    >
+      <div
+        class="bg-white w-[90%] max-w-[850px] p-6 md:p-8 rounded-lg relative max-h-[90vh] overflow-y-auto"
+      >
+        <!-- Tombol Close -->
+        <button
+          onclick="closeModal('modalYEOMobile')"
+          class="absolute top-2 right-3 text-2xl text-gray-600 hover:text-black"
+        >
+          &times;
+        </button>
+
+        <!-- Judul -->
+        <h2
+          class="lg:text-[28px] xxs:text-[21px] font-bold mb-4 text-[#F05235]"
+        >
+          Youth Economic Outlook
+        </h2>
+
+        <p class="mb-4 font-semibold">
+          Indonesia at a Crossroads: Empowering Youth to Accelerate Economic
+          Transformation
+        </p>
+
+        <!-- Deskripsi -->
+        <p class="text-[15px]">
+          Diskusi interaktif yang ditujukan untuk anak muda, mengenai prediksi
+          kondisi perekonomian Indonesia di tahun mendatang dari perspektif
+          makroekonomi dan sektoral, dengan mempertimbangkan isu-isu penting
+          seperti:
+        </p>
+
+        <!-- List Tema -->
+        <ul class="text-[#F05235] font-bold py-3 list-disc pl-6">
+          <li class="font-semibold">Green Economy</li>
+          <li class="font-semibold">Digital Economy</li>
+          <li class="font-semibold">Hilirasi</li>
+        </ul>
+
+        <!-- Tujuan -->
+        <h2 class="font-semibold">Tujuan</h2>
+        <p class="text-[15px]">
+          Mengedukasi dan melibatkan anak muda dalam memahami dan membentuk arah
+          perekonomian Indonesia ke depan yang inklusif dan berkelanjutan.
+        </p>
+
+        <!-- Outcome -->
+        <h2 class="font-semibold mt-4">Outcome</h2>
+        <p class="text-[15px]">
+          Terciptanya generasi muda yang sadar, kritis, serta berperan aktif
+          dalam membentuk arah pembangunan ekonomi Indonesia yang berkelanjutan.
+        </p>
+
+        <!-- Output -->
+        <h2 class="font-semibold mt-4">Output</h2>
+        <p class="text-[15px]">
+          Press release hasil diskusi bersama anak muda dan rekomendasi
+          kebijakan untuk memperkuat perekonomian Indonesia yang berkelanjutan.
+        </p>
+
+        <!-- Kenapa Anak Muda -->
+        <h2 class="font-semibold mt-4">Kenapa Anak Muda?</h2>
+        <p class="text-[15px]">
+          Sebagai calon pengambil kebijakan, anak muda perlu memahami dinamika
+          ekonomi sejak dini agar tumbuh kritis, peduli, dan siap terlibat dalam
+          pembangunan, bukan justru menjadi korban dari praktik ekonomi yang
+          tidak berkelanjutan.
+        </p>
+
+        <!-- MC -->
+        <h2 class="font-semibold mt-4">MC :</h2>
+        <p class="text-[15px]">
+          Praktisi komunikasi yang telah berpengalaman memandu berbagai acara
+          formal maupun informal.
+        </p>
+
+        <!-- Moderator -->
+        <h2 class="font-semibold mt-4">Moderator :</h2>
+        <p class="text-[15px]">
+          Influencer muda yang fokus dengan isu-isu ekonomi yang berkelanjutan.
+        </p>
+
+        <!-- Panelis -->
+        <h2 class="font-semibold mt-4">Panelis :</h2>
+        <p class="text-[15px]">
+          Muhammad Ishak & Yusuf Rendy Manilet (CORE Indonesia), Andhyta
+          Firselly Utami (TBC, Pendiri dan CEO Think Policy)
+        </p>
+        <p class="text-[15px]">
+          Kegiatan ini akan dihadiri lebih 400 anak muda yang berasal dari
+          berbagai latar belakang.
+        </p>
+
+        <!-- Rundown -->
+        <h2 class="font-semibold mt-4">Rundown</h2>
+
+        <div class="overflow-x-auto mt-2">
+          <table
+            class="min-w-full border border-gray-200 divide-y divide-gray-200 text-sm"
+          >
+            <thead class="bg-[#F05235] text-white">
+              <tr>
+                <th
+                  class="border border-gray-300 px-4 py-2 text-left w-[200px]"
+                >
+                  Waktu
+                </th>
+                <th class="border border-gray-300 px-4 py-2 text-left">
+                  Durasi
+                </th>
+                <th class="border border-gray-300 px-4 py-2 text-left">
+                  Acara
+                </th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100 text-gray-600">
+              <tr class="hover:bg-gray-50">
+                <td class="border px-4 py-2 w-[200px]">08.50–09.30</td>
+                <td class="border px-4 py-2">40’</td>
+                <td class="border px-4 py-2">Registrasi & Memasuki ruangan</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="border px-4 py-2 w-[200px]">09.30–09.35</td>
+                <td class="border px-4 py-2">5’</td>
+                <td class="border px-4 py-2">Pembukaan Acara oleh MC</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="border px-4 py-2 w-[200px]">09.35–09.40</td>
+                <td class="border px-4 py-2">5’</td>
+                <td class="border px-4 py-2">
+                  Menyanyikan lagu Indonesia Raya
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="border px-4 py-2 w-[200px]">09.40–09.50</td>
+                <td class="border px-4 py-2">10’</td>
+                <td class="border px-4 py-2">
+                  Welcoming Speech oleh Bapak Mohammad Faisal, Direktur
+                  Eksekutif CORE Indonesia
+                </td>
+              </tr>
+              <!-- lanjutkan baris lainnya -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Tombol Daftar -->
+        <a
+          href="#"
+          class="mt-5 bg-[#F05235] text-white text-center py-2 rounded-[30px] hover:bg-[#d6442c] transition block w-[150px] mx-auto"
+        >
+          Daftar
+        </a>
+      </div>
+    </div>
+
+    <!-- MODAL 2-->
+    <div
+      id="modalTALKMobile"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50"
+    >
+      <div
+        class="bg-white w-[90%] max-w-[850px] p-6 md:p-8 rounded-lg relative max-h-[90vh] overflow-y-auto"
+      >
+        <button
+          onclick="closeModal('modalTALKMobile')"
+          class="absolute top-2 right-3 text-2xl text-gray-600 hover:text-black"
+        >
+          &times;
+        </button>
+        <h2
+          class="lg:text-[28px] xxs:text-[21px] font-bold mb-4 text-[#F05235]"
+        >
+          Youth Economic Talk
+        </h2>
+        <p class="mb-4 font-semibold">
+          Empowering Youth: Smart Finance, Strategic Investment, Sustainable
+          Business
+        </p>
+        <p class="text-[15px]">
+          Youth Economic Talk 2025 hadir sebagai program edukasi interaktif
+          berbentuk talk show, dirancang khusus untuk generasi muda Indonesia.
+          Program ini menghadirkan narasumber yang membahas tiga fokus utama:
+          literasi keuangan untuk membangun pondasi pengelolaan uang yang sehat,
+          investasi portofolio mencakup manajemen investasi dan reksadana
+          berbasis prinsip keberlanjutan, serta kisah sukses pelaku usaha di
+          bidang waste management yang membuktikan bahwa bisnis dapat sekaligus
+          menguntungkan dan memberikan dampak positif bagi lingkungan.
+        </p>
+
+        <h2 class="font-semibold mt-4">Tujuan</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>
+            Literasi Keuangan yang Kuat: Peserta akan dibekali kemampuan
+            mengelola keuangan pribadi secara efektif, memahami strategi
+            pengelolaan risiko, dan membangun fondasi finansial yang solid
+            sebagai modal untuk melangkah ke dunia investasi maupun bisnis.
+          </li>
+          <li>
+            Strategi Investasi Portofolio:  Peserta akan mempelajari cara
+            memilih instrumen investasi yang sesuai profil risiko, mengenali
+            peluang menguntungkan di sektor berkelanjutan, dan menyusun
+            portofolio yang mampu memberikan imbal hasil optimal dalam jangka
+            panjang.
+          </li>
+          <li>
+            Strategi Investasi Portofolio:  Peserta akan mempelajari cara
+            memilih instrumen investasi yang sesuai profil risiko, mengenali
+            peluang menguntungkan di sektor berkelanjutan, dan menyusun
+            portofolio yangInspirasi & Panduan Bisnis Nyata:  Melalui pengalaman
+            langsung pelaku usaha di sektor pengelolaan limbah, peserta akan
+            mendapatkan wawasan praktis tentang memulai, mengembangkan, dan
+            mempertahankan bisnis yang tidak hanya menguntungkan tetapi juga
+            memberikan dampak positif bagi lingkungan.
+          </li>
+        </ul>
+        <h2 class="font-semibold mt-4">Outcome​</h2>
+        <p class="text-[15px]">
+          “Peserta memperoleh materi edukasi, akses ke jejaring strategis, dan
+          panduan praktis investasi serta bisnis berkelanjutan".
+        </p>
+        <h2 class="font-semibold mt-4">Output​</h2>
+        <p class="text-[15px]">
+          “Peserta terdorong untuk memulai investasi cerdas, mengembangkan usaha
+          ramah lingkungan, dan berkontribusi pada pertumbuhan ekonomi hijau.”
+        </p>
+        <p class="text-[15px] mt-5">Peserta: 400 orang​</p>
+        <p class="text-[15px]">Hari: Sabtu, 15 November 2025​​</p>
+        <p class="text-[15px]">Waktu: 13.30 – 15.00 WIB​​​</p>
+        <h2 class="font-semibold mt-4">Panelis</h2>
+
+        <div class="overflow-x-auto">
+          <table
+            class="min-w-full border border-gray-200 divide-y divide-gray-200"
+          >
+            <thead class="bg-[#F05235]">
+              <tr>
+                <th
+                  class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white w-[180px]"
+                >
+                  Nama
+                </th>
+                <th
+                  class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                >
+                  Jabatan/Posisi
+                </th>
+                <th
+                  class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                >
+                  Topik
+                </th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[180px]"
+                >
+                  Lolita Setyawati
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Certified Financial Planner & Co-founder Daya Uang
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Literasi Keuangan
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[180px]"
+                >
+                  Ni Putu Kurniasari
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Chief Operating Officer at Bareksa
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Investasi Portofolio
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[180px]"
+                >
+                  Arky Gilang​
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  CEO Greenprosa
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Pelaku Usaha​
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h2 class="font-semibold mt-4">Rundown</h2>
+        <div class="overflow-x-auto">
+          <table
+            class="min-w-full border border-gray-200 divide-y divide-gray-200"
+          >
+            <thead class="bg-[#F05235]">
+              <tr>
+                <th
+                  class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white w-[160px]"
+                >
+                  Waktu
+                </th>
+                <th
+                  class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                >
+                  Durasi
+                </th>
+                <th
+                  class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                >
+                  Agenda
+                </th>
+                <th
+                  class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                >
+                  Keterangan
+                </th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                >
+                  12.00-12.30
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  30’
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Ishomah
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Check-in peserta ​ Networking awal & foto booth
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                >
+                  12.00-12.30
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  50’
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Registrasi & Welcome ​
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Welcome remarks MC ​
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                >
+                  13.30 - 13.35
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  5’
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Opening & MC Introduction ​
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Pengenalan konsep YET 2025 & Brief introduction moderator​
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                >
+                  13.35 - 13.40
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  5’
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Moderator menjelaskan konsep YET 2025
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Pengenalan konsep YET 2025 & Brief introduction 3 narasumber​
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                >
+                  13.40 - 13.50
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  10’
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Segmen 1: Literasi Keuangan
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Moderator <br />𝑳𝒐𝒍𝒊𝒕𝒂 𝑺𝒆𝒕𝒚𝒂𝒘𝒂𝒕𝒊 (Certified Financial Planner
+                  & Co-founder Daya Uang)*tbc ​
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                >
+                  13.50 - 14.00 ​
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  10’
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Segmen 2: Investasi Portofolio
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Ni Putu Kurniasari (Chief of Operating Officer at Bareksa) ​
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                >
+                  14.00 - 14.10 ​
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  10’
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Segmen 3: Pelaku usaha
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Arky Gilang (CEO Greenprosa) ​
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                >
+                  14.10 - 14.50 ​ ​
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  40’
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Sesi QnA oleh Moderator
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  MC recap 3 poin utama setiap segmen ​
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                >
+                  14.50 - 14.55 ​ ​
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  5’
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Key Takeaways & Summary ​oleh Moderator
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Sesi foto bersama​ ​
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                >
+                  14.55 - 15.00 ​ ​
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  5’
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Closing & Community Building oleh MC
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Sesi foto bersama​ ​
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a
+          href=""
+          class="mt-5 bg-[#F05235] text-white text-center lg:py-3 xxs:py-1 rounded-[30px] hover:bg-[#d6442c] transition block lg:w-[180px] xxs:w-[130px] mx-auto"
+        >
+          Daftar
+        </a>
+      </div>
+    </div>
+
+    <!-- MODAL 3-->
+    <div
+      id="modalYESMobile"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50"
+    >
+      <div
+        class="bg-white w-[90%] max-w-[850px] p-6 md:p-8 rounded-lg relative max-h-[90vh] overflow-y-auto"
+      >
+        <button
+          onclick="closeModal('modalYESMobile')"
+          class="absolute top-2 right-3 text-2xl text-gray-600 hover:text-black"
+        >
+          &times;
+        </button>
+        <h2
+          class="lg:text-[28px] xxs:text-[21px] font-semibold mb-4 text-[#F05235]"
+        >
+          YOUTH ECONOMIC SUMMIT 2025 
+        </h2>
+
+        <p class="text-[15px]">
+          Youth Economics Summit (YES) adalah acara puncak tahunan dari
+          rangkaian program youth engagement yang telah diselenggarakan
+          sepanjang tahun untuk menampung aspirasi generasi muda tentang isu-isu
+          ekonomi Indonesia. Acara ini digagas sebagai bentuk apresiasi untuk
+          suara-suara anak muda yang telah berkontribusi menyampaikan gagasan
+          dan ide-ide inovatif melalui berbagai platform diskusi yang
+          diselenggarakan CORE Indonesia, termasuk apresiasi kepada peserta
+          Youth Voice Challenge yang telah berpartisipasi dalam kampanye
+          tantangan iklim dan ekonomi berkelanjutan.
+        </p>
+        <p class="text-[15px]">
+          <br />Acara YES terdiri dari tiga sesi utama: Youth Economics Outlook
+          yang mengulas kondisi ekonomi setahun terakhir dan proyeksi tahun
+          depan, talkshow yang membahas hasil-hasil Ruang Gagasan bulanan dengan
+          menghadirkan narasumber ahli dan praktisi ekonomi, serta pengumuman
+          pemenang lomba konten kreator Youth Voice Challenge 2025 yang diakhiri
+          dengan sesi hiburan musik dari artis dan performer muda. Program ini
+          dirancang sebagai forum apresiasi yang menghubungkan gagasan generasi
+          muda dengan berani mengambil langkah dan bersuara, sekaligus
+          memberikan ruang hiburan dan networking dalam suasana yang
+          menyenangkan bagi generasi muda.​
+        </p>
+        <p>
+          YES sebagai bentuk kolaborasi CORE Indonesia dengan Suara.com, ingin
+          mewujudkan misi komunikasi masa dan platfrom digital yang edukatif dan
+          sinergis kepada kaum muda.
+        </p>
+        <h2 class="font-semibold mt-4">Lokasi Acara​</h2>
+        <p class="text-[15px]">Radio Republik Indonesia (RRI)</p>
+        <p class="text-[15px]">
+          Jl. Medan Merdeka Barat No.4-5 2, RT.2/RW.3, Gambir, Kecamatan Gambir,
+          Kota Jakarta Pusat, Daerah <br />Khusus Ibukota Jakarta 10110
+        </p>
+        <h2 class="font-semibold mt-4">Waktu​</h2>
+        <p class="text-[15px]">Sabtu, 15 November 2025 08.50 – 17.30 WIB</p>
+        <h2 class="font-semibold mt-4">Rundown Keseluruhan Acara</h2>
+        <div class="overflow-x-auto">
+          <table
+            class="min-w-full border border-gray-200 divide-y divide-gray-200"
+          >
+            <thead class="bg-[#F05235]">
+              <tr>
+                <th
+                  class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white w-[160px]"
+                >
+                  Nama
+                </th>
+                <th
+                  class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white"
+                >
+                  Acara
+                </th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                >
+                  08.50 – 09.30
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Registrasi & Memasuki Ruangan Pembukaan Youth Economic Summit
+                  2025
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                >
+                  09.30 – 12.00
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Youth Economic Outlook 2026
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                >
+                  12.00 - 12.30
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  ISHOMA
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                >
+                  12.30 – 15.00
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Youth Economic Talk
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600 w-[160px]"
+                >
+                  15.00 – 17.30
+                </td>
+                <td
+                  class="border border-gray-300 px-4 py-2 text-sm text-gray-600"
+                >
+                  Youth Voice Challenge
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a
+          href=""
+          class="mt-5 bg-[#F05235] text-white text-center lg:py-3 xxs:py-1 rounded-[30px] hover:bg-[#d6442c] transition block lg:w-[180px] xxs:w-[130px] mx-auto"
+        >
+          Daftar
+        </a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <section
+      class="w-full relative lg:pt-[100px] pt-[70px] xl:h-[800px] lg:h-[650px] sm:h-[550px] xs:h-[450px] h-[400px] bg-[url('./images/bg-yes.jpg')] bg-cover max-2xs:bg-center hidden"
+    >
+      <div
+        class="w-full pt-[30px] relative flex flex-col items-center justify-center"
+      >
+        <img
+          src="./images/icon-yes.png"
+          class="xs:w-[60%] md:w-[35%] lg:w-[35%]"
+        />
+      </div>
+      <div class="relative pt-[30px] flex justify-center">
+        <h1 class="bg-[#025552] text-white px-10 py-4 rounded-[30px]">
+          The New Economy Generation: Sustain, Scale, Succeed
+        </h1>
+      </div>
+    </section>
+
+    <section
+      class="w-full relative xs:h-full overflow-hidden py-10 bg-[#e0f7fa]"
+    >
+      <h2
+        class="text-[#56b4b9] text-center font-bold text-[16px] xs:text-[25px] lg:text-[36px] mb-6"
+      >
+        What We’ve Done
+      </h2>
+      <div class="w-full max-w-[1200px] mx-auto py-[40px] px-4 sm:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 relative">
+          <!-- Card 1 -->
+          <!-- Menggunakan padding horizontal (px) yang seragam di semua kartu -->
+          <div
+            class="flex flex-col justify-between md:px-4 relative pb-6 md:pb-0"
+          >
+            <div>
+              <!-- Video Thumbnail Container -->
+              <div
+                class="relative rounded-lg overflow-hidden bg-black group aspect-video mb-4 shadow-md"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80"
+                  alt="2023 Event"
+                  class="w-full h-full object-cover opacity-80"
+                />
+
+                <!-- Video Overlay UI -->
+                <div
+                  class="absolute top-2 left-2 flex items-center gap-2 text-white text-xs bg-black/40 px-2 py-1 rounded"
+                >
+                  <span class="w-2 h-2 rounded-full bg-red-600"></span>
+                  <span class="truncate max-w-[180px]"
+                    >CORE Youth Economic Night Highlight</span
+                  >
+                </div>
+
+                <!-- YouTube Bottom Tag -->
+                <div
+                  class="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded flex items-center gap-1"
+                >
+                  <span>Tonton di</span>
+                  <i class="fa-brands fa-youtube text-red-500"></i>
+                  <span class="font-bold">YouTube</span>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <h2 class="text-4xl font-extrabold text-gray-900 mb-1">2023</h2>
+              <h3 class="text-lg font-bold text-gray-900 leading-tight mb-2">
+                Towards an Inclusive Digital and Green Economy
+              </h3>
+              <p class="text-xs text-gray-600 font-medium mb-4">
+                Sabtu, 9 Desember 2023
+              </p>
+            </div>
+
+            <div class="text-sm font-semibold text-gray-800 space-y-1 mt-auto">
+              <p>M Bloc Space, Jakarta Selatan</p>
+              <p class="font-extrabold">±450 peserta audiens yang hadir</p>
+            </div>
+
+            <!-- Garis Pemisah Vertikal 1 (Antara Card 1 dan 2) -->
+            <!-- Diposisikan tepat di sebelah kanan kartu pertama -->
+            <div
+              class="hidden md:block absolute top-0 bottom-0 right-0 w-px bg-[#0e7490]"
+            >
+              <!-- Titik dekorasi atas -->
+              <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-[#0e7490]"
+              ></div>
+              <!-- Titik dekorasi bawah -->
+              <div
+                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-[#0e7490]"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <!-- Padding horizontal px-4 yang sama -->
+          <div
+            class="flex flex-col justify-between md:px-4 relative pb-6 md:pb-0"
+          >
+            <div>
+              <!-- Video Thumbnail Container -->
+              <div
+                class="relative rounded-lg overflow-hidden bg-black group aspect-video mb-4 shadow-md"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=600&q=80"
+                  alt="2024 Event"
+                  class="w-full h-full object-cover opacity-80"
+                />
+
+                <div
+                  class="absolute top-2 left-2 flex items-center gap-2 text-white text-xs bg-black/40 px-2 py-1 rounded"
+                >
+                  <span class="w-2 h-2 rounded-full bg-red-600"></span>
+                  <span class="truncate max-w-[180px]"
+                    >Youth Economic Summit 2024, CORE Indonesia</span
+                  >
+                </div>
+
+                <div
+                  class="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded flex items-center gap-1"
+                >
+                  <span>Tonton di</span>
+                  <i class="fa-brands fa-youtube text-red-500"></i>
+                  <span class="font-bold">YouTube</span>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <h2 class="text-4xl font-extrabold text-gray-900 mb-1">2024</h2>
+              <h3 class="text-lg font-bold text-gray-900 leading-tight mb-2">
+                Towards an Inclusive Digital & Green Economy
+              </h3>
+              <p class="text-xs text-gray-600 font-medium mb-4">
+                Sabtu, 23 November 2024
+              </p>
+            </div>
+
+            <div class="text-sm font-semibold text-gray-800 space-y-1 mt-auto">
+              <p>Graha Bhakti Budaya, TIM</p>
+              <p class="font-extrabold">±700 peserta audiens yang hadir</p>
+            </div>
+
+            <!-- Garis Pemisah Vertikal 2 (Antara Card 2 dan 3) -->
+            <!-- Diposisikan tepat di sebelah kanan kartu kedua -->
+            <div
+              class="hidden md:block absolute top-0 bottom-0 right-0 w-px bg-[#0e7490]"
+            >
+              <!-- Titik dekorasi atas -->
+              <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-[#0e7490]"
+              ></div>
+              <!-- Titik dekorasi bawah -->
+              <div
+                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-[#0e7490]"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Card 3 (2025) -->
+          <!-- Padding horizontal px-4 yang sama -->
+          <div
+            class="flex flex-col justify-between md:px-4 relative pb-6 md:pb-0"
+          >
+            <div>
+              <!-- Video Thumbnail Container -->
+              <div
+                class="relative rounded-lg overflow-hidden bg-black group aspect-video mb-4 shadow-md"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=600&q=80"
+                  alt="2025 Event"
+                  class="w-full h-full object-cover opacity-80"
+                />
+
+                <div
+                  class="absolute top-2 left-2 flex items-center gap-2 text-white text-xs bg-black/40 px-2 py-1 rounded"
+                >
+                  <span class="w-2 h-2 rounded-full bg-red-600"></span>
+                  <span class="truncate max-w-[180px]"
+                    >YES 2025 : Saatnya Generasi Muda...</span
+                  >
+                </div>
+
+                <div
+                  class="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded flex items-center gap-1"
+                >
+                  <span>Tonton di</span>
+                  <i class="fa-brands fa-youtube text-red-500"></i>
+                  <span class="font-bold">YouTube</span>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <h2 class="text-4xl font-extrabold text-gray-900 mb-1">2025</h2>
+              <h3 class="text-lg font-bold text-gray-900 leading-tight mb-2">
+                The New Economy Generation: Sustain, Scale, Succeed
+              </h3>
+              <p class="text-xs text-gray-600 font-medium mb-4">
+                Sabtu, 15 November 2024
+              </p>
+            </div>
+
+            <div class="text-sm font-semibold text-gray-800 space-y-1 mt-auto">
+              <p>Radio Republik Indonesia</p>
+              <p class="font-extrabold">±400 peserta audiens yang hadir</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="w-full relative xs:h-full overflow-hidden py-10 bg-[#f05235]"
+    >
+      <h2
+        class="text-[#fff] text-center font-bold text-[16px] xs:text-[25px] lg:text-[36px] mb-6"
+      >
+        Ruang Kolaborasi
+      </h2>
+      <div class="w-full max-w-[1200px] mx-auto py-[40px] px-4 sm:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+          <div
+            class="relative bg-[#fbeada] border border-stone-800 rounded-lg p-6 sm:p-8 flex flex-col justify-center items-center text-center shadow-sm"
+          >
+            <div
+              class="absolute -top-5 -right-3 sm:-right-5 w-12 h-12 bg-indigo-500 rounded-xl rotate-12 flex items-center justify-center text-white text-2xl shadow-md border-2 border-indigo-300"
+            >
+              👍
+            </div>
+
+            <div class="mb-5 flex flex-col items-center">
+              <span
+                class="inline-block border border-stone-800 bg-white font-bold text-stone-900 px-5 py-1.5 rounded-xl text-base sm:text-lg mb-2 shadow-sm"
+              >
+                Sesi Utama
+              </span>
+              <p
+                class="font-extrabold text-stone-900 text-lg sm:text-xl tracking-wide"
+              >
+                YEO, YET, YEC
+              </p>
+            </div>
+
+            <div class="mb-5 flex flex-col items-center">
+              <span
+                class="inline-block border border-stone-800 bg-white font-bold text-stone-900 px-5 py-1.5 rounded-xl text-base sm:text-lg mb-2 shadow-sm"
+              >
+                Mini stage
+              </span>
+              <p class="text-stone-800 text-base sm:text-lg">
+                <strong class="italic font-bold">Energy bridge</strong> di waktu
+                istirahat
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <span
+                class="inline-block border border-stone-800 bg-white font-bold text-stone-900 px-5 py-1.5 rounded-xl text-base sm:text-lg mb-2 shadow-sm"
+              >
+                Booth Komunitas
+              </span>
+              <p class="text-stone-800 text-base sm:text-lg">
+                Ruang interaksi sepanjang hari
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg border border-slate-300 shadow-sm overflow-hidden flex flex-col justify-between"
+          >
+            <table class="w-full h-full text-center border-collapse">
+              <thead>
+                <tr class="bg-[#fbeada] border-b border-slate-300">
+                  <th
+                    class="py-3 px-4 font-bold text-stone-800 text-sm sm:text-base border-r border-slate-300 w-2/5"
+                  >
+                    Waktu
+                  </th>
+                  <th
+                    class="py-3 px-4 font-bold text-stone-800 text-sm sm:text-base w-3/5"
+                  >
+                    Sesi
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="divide-y divide-slate-300 text-xs sm:text-sm text-stone-800 font-medium"
+              >
+                <tr>
+                  <td class="py-3.5 px-4 border-r border-slate-300">
+                    10.00 – 12.00
+                  </td>
+                  <td class="py-3.5 px-4 font-semibold">
+                    YEO Read the Direction
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3.5 px-4 border-r border-slate-300">
+                    12.00 – 13.00
+                  </td>
+                  <td class="py-3.5 px-4">Mini Stage: Recharge Time</td>
+                </tr>
+                <tr>
+                  <td class="py-3.5 px-4 border-r border-slate-300">
+                    13.00 – 15.00
+                  </td>
+                  <td class="py-3.5 px-4 font-semibold">YET Drive Your Way</td>
+                </tr>
+                <tr>
+                  <td class="py-3.5 px-4 border-r border-slate-300">
+                    15.00 – 15.30
+                  </td>
+                  <td class="py-3.5 px-4">Mini Stage: Re-Energize Time</td>
+                </tr>
+                <tr>
+                  <td class="py-3.5 px-4 border-r border-slate-300">
+                    15.30 – 17.30
+                  </td>
+                  <td class="py-3.5 px-4 font-semibold">YEC Drive Together</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activity Section -->
+    <section
+      class="w-full relative xs:h-full lg:h-[860px] overflow-hidden hidden"
+    >
+      <!-- Background -->
+      <img
+        src="./images/bg-activity.jpg"
+        alt="Background"
+        class="absolute inset-0 w-full h-full object-cover z-0"
+      />
+
+      <div
+        class="w-full max-w-[1200px] mx-auto items-center py-[40px] justify-center h-full relative z-10"
+      >
+        <h2
+          class="text-white text-center font-bold drop-shadow-lg text-[16px] xs:text-[25px] lg:text-[36px] mb-6"
+        >
+          Activity
+        </h2>
+
+        <!-- Grid (Desktop) -->
+        <div
+          class="hidden lg:grid lg:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-4"
+        >
+          <!-- grid 1 -->
+          <div class="md:text-[20px] text-sm mb-5 p-2">
+            <a href="#">
+              <img src="./images/news-1.png" alt="" class="w-full rounded-lg" />
+              <p class="text-white py-3 text-md">Lorem Ipsum Is Dummy Text</p>
+            </a>
+          </div>
+          <!-- grid 2 -->
+          <div class="md:text-[20px] text-sm mb-5 p-2">
+            <a href="#">
+              <img src="./images/news-2.png" alt="" class="w-full rounded-lg" />
+              <p class="text-white py-3 text-md">Lorem Ipsum Is Dummy Text</p>
+            </a>
+          </div>
+          <!-- grid 3 -->
+          <div class="md:text-[20px] text-sm mb-5 p-2">
+            <a href="#">
+              <img src="./images/news-3.png" alt="" class="w-full rounded-lg" />
+              <p class="text-white py-3 text-md">Lorem Ipsum Is Dummy Text</p>
+            </a>
+          </div>
+          <!-- grid 4 -->
+          <div class="md:text-[20px] text-sm mb-5 p-2">
+            <a href="#">
+              <img src="./images/news-4.png" alt="" class="w-full rounded-lg" />
+              <p class="text-white py-3 text-md">Lorem Ipsum Is Dummy Text</p>
+            </a>
+          </div>
+          <!-- grid 5 -->
+          <div class="md:text-[20px] text-sm mb-5 p-2">
+            <a href="#">
+              <img src="./images/news-5.png" alt="" class="w-full rounded-lg" />
+              <p class="text-white py-3 text-md">Lorem Ipsum Is Dummy Text</p>
+            </a>
+          </div>
+          <!-- grid 6 -->
+          <div class="md:text-[20px] text-sm mb-5 p-2">
+            <a href="#">
+              <img src="./images/news-6.png" alt="" class="w-full rounded-lg" />
+              <p class="text-white py-3 text-md">Lorem Ipsum Is Dummy Text</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slider (Mobile) -->
+        <div class="lg:hidden swiper myActivity">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-2">
+              <a href="#">
+                <img
+                  src="./images/news-1.png"
+                  alt=""
+                  class="w-full rounded-lg"
+                />
+                <p class="text-white py-3 text-center">
+                  Lorem Ipsum Is Dummy Text
+                </p>
+              </a>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide p-2">
+              <a href="#">
+                <img
+                  src="./images/news-2.png"
+                  alt=""
+                  class="w-full rounded-lg"
+                />
+                <p class="text-white py-3 text-center">
+                  Lorem Ipsum Is Dummy Text
+                </p>
+              </a>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide p-2">
+              <a href="#">
+                <img
+                  src="./images/news-3.png"
+                  alt=""
+                  class="w-full rounded-lg"
+                />
+                <p class="text-white py-3 text-center">
+                  Lorem Ipsum Is Dummy Text
+                </p>
+              </a>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide p-2">
+              <a href="#">
+                <img
+                  src="./images/news-4.png"
+                  alt=""
+                  class="w-full rounded-lg"
+                />
+                <p class="text-white py-3 text-center">
+                  Lorem Ipsum Is Dummy Text
+                </p>
+              </a>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide p-2">
+              <a href="#">
+                <img
+                  src="./images/news-5.png"
+                  alt=""
+                  class="w-full rounded-lg"
+                />
+                <p class="text-white py-3 text-center">
+                  Lorem Ipsum Is Dummy Text
+                </p>
+              </a>
+            </div>
+            <!-- Slide 6 -->
+            <div class="swiper-slide p-2">
+              <a href="#">
+                <img
+                  src="./images/news-6.png"
+                  alt=""
+                  class="w-full rounded-lg"
+                />
+                <p class="text-white py-3 text-center">
+                  Lorem Ipsum Is Dummy Text
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div
+            class="swiper-pagination absolute left-0 right-0 bottom-0 flex justify-center !static mt-4"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- events -->
+    <section
+      class="w-full relative xs:h-full lg:h-[860px] overflow-hidden hidden"
+    >
+      <!-- Background image -->
+
+      <!-- Text -->
+      <div
+        class="w-full max-w-[1200px] mx-auto items-center py-[40px] justify-center h-full"
+      >
+        <h2
+          class="text-white text-center font-bold drop-shadow-lg text-[21px] xs:text-[25px] lg:text-[36px]"
+        >
+          Venue Event
+        </h2>
+        <h3
+          class="text-white text-center drop-shadow-lg text-[16px] xs:text-[16px] lg:text-[18px]"
+        >
+          <b>Auditorium Abdul Rachman Saleh, RRI,</b> <br />Jalan Medan Merdeka
+          Barat No. 4-5, Jakarta Pusat
+
+          <br />Sabtu 15 November 2025, Pukul 08.50 – 17.30
+        </h3>
+        <div
+          class="w-full mx-auto flex items-center justify-center py-6 relative"
+        >
+          <img
+            src="./images/rri-1.png"
+            alt="Background"
+            class="lg:w-[70%] xs:w-[90%] h-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- partner -->
+    <section class="w-full relative xs:h-full overflow-hidden">
+      <div class="w-full max-w-[1200px] mx-auto px-4 py-[40px] relative">
+        <!-- Jejaring Komunitas -->
+        <h2
+          class="lg:text-[32px] xs:text-[21px] uppercase mb-[20px] font-bold text-center hidden"
+        >
+          Jejaring komunitas muda CORE Indonesia
+        </h2>
+        <p class="text-center hidden">
+          Bermuatan edukasi, rangkaian kegiatan Youth Economic Summit
+          <br />melibatkan perguruan tinggi negeri maupun swasta dan sejumlah
+          komunitas yang relevan
+        </p>
+        <div
+          class="w-full grid lg:grid-cols-6 xs:grid-cols-2 xxs:grid-cols-2 gap-4 relative py-10 border-b border-dashed border-gray-400 mb-10 hidden"
+        >
+          <div class="flex items-center justify-center mb-3">
+            <img src="./images/partner/yoursay.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/envisa.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/saling.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/coacing.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/excellent.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/lindungi.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/alw.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/lic.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/spb.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/rapoo.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/ratih.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/riang.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/trash.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/adiftif.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/trilogi.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/uib.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/upn.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/bi.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/siwa.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/uad.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/ut.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/ipb.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/isei.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/standpindo.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/standpindo.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/trisakti.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/padjajaran.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/sudirman.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/unas.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/hasanudin.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/umy.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/bumi.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/pasundan.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/ojk.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/waste.png" class="" />
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <img src="./images/partner/bumn-muda.png" class="" />
+          </div>
+        </div>
+
+        <!-- ----------------------- -->
+
+        <!-- Sponsor -->
+        <!-- <h2 class="lg:text-[30px] xs:text-[21px] font-medium text-center xxs:mb-10">Sponsored By</h2>
+        <div class="w-full grid lg:grid-cols-5 xs:grid-cols-2 xxs:grid-cols-2 gap-2 mt-5 relative">
+          <div class="flex items-center justify-center lg:mb-0 xxs:mb-16">
+            <img
+              src="./images/partner/ovo.png"
+              class="object-contain"
+            />
+          </div>
+          <div class="flex items-center justify-center lg:mb-0 xxs:mb-16">
+            <img
+              src="./images/partner/bri.png"
+              class="w-[58%] object-contain"
+            />
+          </div>
+          <div class="flex items-center justify-center lg:mb-0 xxs:mb-16">
+            <img
+              src="./images/partner/viny_end.png"
+              class="w-[85%] object-contain"
+            />
+          </div>
+          <div class="flex items-center justify-center lg:mb-0 xxs:mb-16">
+            <img
+              src="./images/partner/mindid.png"
+              class="object-contain"
+            />
+          </div>
+          <div class="flex items-center justify-centerl lg:mb-0 xxs:mb-6">
+            <img
+              src="./images/partner/bca.png"
+              class="w-[70%] object-contain"
+            />
+          </div>
+          <div class="flex items-center justify-center lg:mb-0 xxs:mb-6">
+            <img
+              src="./images/partner/sinarmas.svg"
+              class="object-contain"
+            />
+          </div>
+          <div class="flex items-center justify-center lg:mb-0 xxs:mb-6">
+            <img
+              src="./images/partner/solaria.png"
+              class="w-[80%] object-contain"
+            />
+          </div>
+
+          <div class="flex items-center justify-center lg:mb-0 xxs:mb-6">
+            <img
+              src="./images/partner/adaro.png"
+              class="object-contain"
+            />
+          </div>
+          <div class="flex items-center justify-center lg:mb-0 xxs:mb-6">
+            <img
+              src="./images/partner/mayora.png"
+              class="object-contain"
+            />
+          </div>
+          <div class="flex items-center justify-center lg:mb-0 xxs:mb-6">
+            <img
+              src="./images/partner/logo-kso.png"
+              class="w-[100%] object-contain"
+            />
+          </div>
+        </div>
+        <div class="w-full grid grid-cols-2 sm:flex flex-wrap justify-center items-center border-b border-dashed border-gray-400 mb-5 pb-[30px]">
+          <div class="flex items-center justify-center pr-5 relative">
+            <img
+              src="./images/partner/cendol.jpeg"
+              alt="Cendol Partner Logo"
+              class="h-28 object-contain"
+            />
+          </div>
+        
+          <div class="flex items-center justify-center pl-5">
+            <img
+              src="./images/partner/garuda.png"
+              alt="Garuda Partner Logo"
+              class="h-14 object-contain"
+            />
+          </div>
+        </div> -->
+
+        <!-- Community Partner -->
+        <h2
+          class="lg:text-[30px] xs:text-[21px] font-medium text-center xxs:mb-6"
+        >
+          Community Partner
+        </h2>
+        <div
+          class="w-full grid lg:grid-cols-5 xs:grid-cols-2 xxs:grid-cols-2 gap-2 mt-2 relative"
+        >
+          <div class="flex items-center justify-center xxs:mb-8">
+            <img src="./images/partner/FoSSEI.png" class="w-[50%]" />
+          </div>
+          <div class="flex items-center justify-center xxs:mb-8">
+            <img src="./images/partner/YRI.png" class="w-[75%]" />
+          </div>
+          <div class="flex items-center justify-center xxs:mb-8">
+            <img src="./images/partner/Prakarsa.png" class="w-[75%]" />
+          </div>
+          <div class="flex items-center justify-center xxs:mb-8">
+            <img src="./images/partner/EIB.png" class="w-[60%]" />
+          </div>
+          <div class="flex items-center justify-center xxs:mb-8">
+            <img src="./images/partner/BijakMemantau.png" class="w-[75%]" />
+          </div>
+          <div class="flex items-center justify-center xxs:mb-8">
+            <img src="./images/partner/Article33.png" class="w-[85%]" />
+          </div>
+          <div class="flex items-center justify-center xxs:mb-8">
+            <img src="./images/partner/Gen-B.png" class="w-[85%]" />
+          </div>
+          <div class="flex items-center justify-center xxs:mb-8">
+            <img src="./images/partner/cleanomic.jpeg" class="w-[85%]" />
+          </div>
+          <div class="flex items-center justify-center xxs:mb-8">
+            <img src="./images/partner/SRE UNJ.png" class="w-[65%]" />
+          </div>
+          <div class="flex items-center justify-center xxs:mb-8">
+            <img src="./images/partner/SRE UPNVJ.png" class="" />
+          </div>
+        </div>
+        <div
+          class="w-full grid grid-cols-1 sm:flex flex-wrap justify-center items-center border-b border-dashed border-gray-400 mb-5 pb-[30px]"
+        >
+          <div class="flex items-center justify-center xxs:mb-8">
+            <img src="./images/partner/Bajik.png" class="w-[28%]" />
+          </div>
+        </div>
+
+        <!-- Supported -->
+        <h2 class="lg:text-[30px] xs:text-[21px] font-medium text-center py-6">
+          Supported Partner
+        </h2>
+        <div
+          class="w-full grid lg:grid-cols-1 xs:grid-cols-1 xxs:grid-cols-1 gap-2 mt-1 border-b border-dashed border-gray-400 relative"
+        >
+          <div class="flex items-center justify-center mb-8">
+            <img
+              src="./images/partner/logo_RRI.png"
+              class="lg:w-[15%] xxs:w-[40%]"
+            />
+          </div>
+        </div>
+
+        <div
+          class="w-full grid lg:grid-cols-3 xs:grid-cols-1 gap-4 relative mt-10"
+        >
+          <div class="mx-auto items-center justify-center mb-3 text-center">
+            <h4 class="font-bold text-[21px] mb-5 font-medium">An Event By</h4>
+            <img src="./images/partner/core-indonesia.png" class="mx-auto" />
+          </div>
+
+          <div class="mx-auto items-center justify-center mb-3 text-center">
+            <h4 class="font-bold text-[21px] mb-5 font-medium">Collaborator</h4>
+            <img src="./images/partner/suara.png" class="mx-auto" />
+          </div>
+          <div class="mx-auto items-center justify-center mb-3 text-center">
+            <h4 class="font-bold text-[21px] mb-5 uppercase"></h4>
+            <img src="./images/logo-yes.svg" class="lg:h-[57px] h-[70px]" />
+          </div>
+
+          <div class="flex flex-col gap-4 mt-5 lg:mx-auto">
+            <div class="flex items-start gap-4">
+              <img src="./images/adress.png" class="w-8 h-8" alt="Alamat" />
+              <p class="text-sm leading-relaxed">
+                Gedung CORE Indonesia<br />
+                Jl. Tebet Barat Dalam Raya<br />
+                No. 76A, Jakarta Selatan, Indonesia 12810
+              </p>
+            </div>
+
+            <div class="flex items-start items-center gap-4">
+              <img
+                src="./images/pesan.png"
+                class="w-8 h-6 items-center"
+                alt="Pesan"
+              />
+              <p class="text-sm">info@coreindonesia.org</p>
+            </div>
+            <div class="flex items-start items-center gap-4">
+              <img src="./images/wa.png" class="w-8 h-8" alt="Pesan" />
+              <p class="text-sm leading-relaxed">081314080397 (Emma)</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4 mt-5 lg:mx-auto">
+            <div class="flex items-start gap-4">
+              <img src="./images/adress.png" class="w-8 h-8" alt="Alamat" />
+              <p class="text-sm leading-relaxed">
+                Jl. Mega Kuningan Timur <br />
+                Blok C6 Kav.9 Mega Kuningan <br />Jakarta 12950
+              </p>
+            </div>
+
+            <div class="flex items-start items-center gap-4">
+              <img
+                src="./images/pesan.png"
+                class="w-8 h-6 items-center"
+                alt="Pesan"
+              />
+              <p class="text-sm">sisfira@arkadiacorp.com</p>
+            </div>
+            <div class="flex items-start items-center gap-4">
+              <img src="./images/wa.png" class="w-8 h-8" alt="Pesan" />
+              <p class="text-sm leading-relaxed">087884128120 (Sisfira Rin)</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4 mt-5 lg:mx-auto">
+            <div class="flex items-start gap-4">
+              <p>
+                Youth Economic Summit atau disingkat YES merupakan program
+                pelibatan kaum muda untuk mendukung kemajuan Indonesia melalui
+                pengembangan ekonomi digital yang inklusif dan ekonomi hijau
+                yang berkelanjutan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="w-full relative xs:h-full overflow-hidden bg-[#F2F2F2]">
+      <div class="w-full max-w-[1200px] mx-auto px-2 py-[10px] relative">
+        <p class="text-center">
+          © 2025 youtheconomicsummit.org - All Rights Reserved
+        </p>
+      </div>
+      <div class="w-full hidden">
+        <img
+          src="./images/foot-boot.png"
+          class="w-full h-auto object-contain"
+        />
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      function openModal(id) {
+        document.getElementById(id).classList.remove("hidden");
+        document.getElementById(id).classList.add("flex");
+      }
+
+      function closeModal(id) {
+        document.getElementById(id).classList.add("hidden");
+        document.getElementById(id).classList.remove("flex");
+      }
+
+      // Optional: Close modal if clicking outside the modal content
+      window.addEventListener("click", function (e) {
+        const modal = document.getElementById("modalYEO");
+        if (e.target === modal) {
+          closeModal("modalYEO");
+        }
+      });
+      // Optional: Close modal if clicking outside the modal content
+      window.addEventListener("click", function (e) {
+        const modal = document.getElementById("modalYEOMobile");
+        if (e.target === modal) {
+          closeModal("modalYEOMobile");
+        }
+      });
+      // Optional: Close modal if clicking outside the modal content
+      window.addEventListener("click", function (e) {
+        const modal = document.getElementById("modalTALKMobile");
+        if (e.target === modal) {
+          closeModal("modalTALKMobile");
+        }
+      });
+      // Optional: Close modal if clicking outside the modal content
+      window.addEventListener("click", function (e) {
+        const modal = document.getElementById("modalTALK");
+        if (e.target === modal) {
+          closeModal("modalTALK");
+        }
+      });
+      // Optional: Close modal if clicking outside the modal content
+      window.addEventListener("click", function (e) {
+        const modal = document.getElementById("modalYES");
+        if (e.target === modal) {
+          closeModal("modalYES");
+        }
+      });
+      // Optional: Close modal if clicking outside the modal content
+      window.addEventListener("click", function (e) {
+        const modal = document.getElementById("modalDETAIL");
+        if (e.target === modal) {
+          closeModal("modalDETAIL");
+        }
+      });
+      // Optional: Close modal if clicking outside the modal content
+      window.addEventListener("click", function (e) {
+        const modal = document.getElementById("modalDETAIL-mobile");
+        if (e.target === modal) {
+          closeModal("modalDETAIL-mobile");
+        }
+      });
+    </script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script>
+      const swiper2 = new Swiper(".myActivity", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YES</title>
+    <link
+      rel="shortcut icon"
+      href="./images/icon-yes.svg"
+      type="image/x-icon"
+    />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#166866",
+            },
+            screens: {
+              "2xs": "390px",
+              // => @media (min-width: 390px) { ... }
+
+              xs: "480px",
+              // => @media (min-width: 480px) { ... }
+
+              sm: "640px",
+              // => @media (min-width: 640px) { ... }
+
+              md: "768px",
+              // => @media (min-width: 768px) { ... }
+
+              lg: "1024px",
+              // => @media (min-width: 1024px) { ... }
+
+              xl: "1280px",
+              // => @media (min-width: 1280px) { ... }
+
+              "2xl": "1536px",
+              // => @media (min-width: 1536px) { ... }
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8KYT8LD2F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-X8KYT8LD2F');
+  </script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="bg-white fixed flex items-center justify-center w-full z-[49] shadow-[0px_6px_8px_0px_#00000026]"
+    >
+      <div
+        class="w-full lg:h-[100px] h-[70px] max-w-[1200px] flex max-lg:flex-wrap items-center justify-between lg:px-4 relative"
+      >
+        <a
+          href="index.html"
+          class="lg:w-full lg:h-[100px] h-[70px] flex items-center lg:max-w-[150px]"
+        >
+          <img
+            src="./images/logo-yes.svg"
+            class="lg:h-[68px] h-[45px] max-lg:ml-4"
+          />
+        </a>
+
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex h-[70px] flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden max-lg:mr-4"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="hidden w-full lg:max-w-[80%] max-w-[100%] lg:ml-5 lg:block bg-white max-lg:shadow-[0px_6px_8px_0px_#00000026]"
+          id="navbar-default"
+        >
+          <ul
+            class="text-[#1E1E1E] min-h-[100px] lg:items-center capitalize font-bold w-full text-sm flex justify-between flex-col p-4 lg:p-0 rounded-lg lg:flex-row"
+          >
+            <li class="max-lg:mb-4">
+              <a href="about.html"> Tentang </a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="program.html"> Program</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="agenda.html"> Agenda</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="pojok-suara.html"> Pojok suara</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="publikasi-detail.html"> Publikasi</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="data.html"> Data</a>
+            </li>
+            <li class="max-lg:mb-4">
+              <a href="foto-video.html"> Foto & Video</a>
+            </li>
+            <li class="flex justify-end lg:w-[25%] w-full max-lg:justify-start">
+              <div class="flex justify-between items-center lg:ml-4 lg:w-full">
+                <a href="#" class="lg:mr-4 mr-5">
+                  <img src="icons/user-circle.svg" class="w-[38px] h-auto" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/fb.svg" class="h-[17px]" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/tw.svg" class="h-[17px]" />
+                </a>
+                <a href="https://www.instagram.com/youtheconomicsummit.official/?igsh=aHoyc2pncDBzdzZx#" class="lg:mr-3 mr-5">
+                  <img src="icons/ig.svg" class="h-[17px]" />
+                </a>
+                <a href="#" class="lg:mr-3 mr-5">
+                  <img src="icons/yt.svg" class="h-[17px]" />
+                </a>
+                <a href="#">
+                  <img src="icons/tk.svg" class="h-[17px]" />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+
+    <!-- Daftar -->
+    <section class="w-full relative">
+      <div class="w-full max-w-[1200px] mx-auto px-4 py-[130px] relative bg-[#D7DCE0] flex flex-col items-center justify-center text-center">
+        
+        <!-- Judul -->
+        <h2 class="bg-[#F05235] text-white text-[29px] mb-[20px] font-bold px-10 py-2 rounded-lg inline-block">
+         Form Pendaftaran
+        </h2>
+        
+        <!-- Subjudul -->
+        <p class="font-bold text-[21px]">
+          YOUTH VOICE CHALLENGE 2025
+        </p>
+        <p>The New Economy Generation: Sustain, Scale, Succeed</p>
+        <p class="text-[#F05235] font-bold py-3">Periode Pendaftaran: 28 Juli - 10 September 2025</p>
+      
+        <!-- Form -->
+        <form action="#" method="POST" class="w-full rounded-lg lg:px-20 xs:px-2 mt-10 text-left space-y-6 ">
+          <div class="">
+            <label for="kategori" class="block font-semibold mb-2">Jenis Peserta</label>
+            <select id="kategori" name="kategori" required
+              class="w-full border border-gray-300 rounded-[30px] px-4 py-4 bg-white">
+              <option value="" disabled selected>Kelamin</option>
+              <option value="Pria">Pria-Laki</option>
+              <option value="Wanita">Wanita</option>
+            </select>
+          </div>
+
+          <p class="font-bold mt-4">Data Peserta</p>
+          <div>
+            <input type="text" name="nama" required
+              class="w-full border border-gray-300 rounded-[30px]  px-4 py-4" placeholder="Nama Lengkap"/>
+          </div>
+
+          <div>
+            <input type="text" name="usia" required
+              class="w-full border border-gray-300 rounded-[30px]  px-4 py-4 " placeholder="Usia"/>
+          </div>
+
+          <div>
+            <input type="email" name="email" required
+              class="w-full border border-gray-300 rounded-[30px]  px-4 py-4" placeholder="Email"/>
+          </div>
+
+          <div>
+            <input type="number" name="whatsapp" required
+              class="w-full border border-gray-300 rounded-[30px]  px-4 py-4" placeholder="Whatsapp"/>
+          </div>
+
+          <div>
+            <input type="text" name="alamat" required
+              class="w-full border border-gray-300 rounded-[30px]  px-4 py-4" placeholder="Alamat"/>
+          </div>
+
+          <div class="">
+            <select id="kategori" name="kategori" required
+              class="w-full border border-gray-300 rounded-[30px] px-4 py-4 bg-white">
+              <option value="" disabled selected>Pendidikan</option>
+              <option value="sma">SMA</option>
+              <option value="diploma">Diploma</option>
+              <option value="sarjana">Sarjana</option>
+            </select>
+          </div>
+
+          <div>
+            <input type="text" name="pekerjaan" required
+              class="w-full border border-gray-300 rounded-[30px]  px-4 py-4 " placeholder="Pekerjaan"/>
+          </div>
+
+          <p class="font-bold mt-4">DESKRIPSI VIDEO</p>
+          <div>
+            <input type="text" name="judul" required
+              class="w-full border border-gray-300 rounded-[30px]  px-4 py-4 " placeholder="Judul"/>
+          </div>
+          <div>
+            <label for="pesan" class="block font-semibold mb-2"></label>
+            <textarea
+              name="pesan"
+              rows="4"
+              placeholder="Synopsis/Deskripsi Video (Maksimal 200 kata)"
+              required
+              class="w-full border border-gray-300 rounded-[30px] px-4 py-2 bg-white  resize-none"
+            ></textarea>
+          </div>
+          <p class="font-bold mt-4">AKUN MEDIA SOSIAL</p>
+          <div>
+            <input type="text" name="ig" required
+              class="w-full border border-gray-300 rounded-[30px]  px-4 py-4 " placeholder="Nama Akun Instagram"/>
+          </div>
+          <div>
+            <input type="text" name="medsos_lainnya" required
+              class="w-full border border-gray-300 rounded-[30px]  px-4 py-4 " placeholder="Akun Media Sosial Lainnya (Opsional)"/>
+          </div>
+
+          <p class="font-bold">Catatan Penting</p>
+          <ul>
+            <li>- Video harus sudah diunggah di Instagram sesuai ketentuan yang telah ditetapkan.</li>
+            <li>- Sertakan screenshot bukti upload</li>
+            <li>- Video tidak boleh dihapus hingga pengumuman pemenang</li>
+          </ul>
+          <p class="font-bold">LINK VIDEO & BUKTI UPLOAD</p>
+          <div>
+            <input type="text" name="link" required
+              class="w-full border border-gray-300 rounded-[30px]  px-4 py-4 " placeholder="Link Video Instagram"/>
+          </div>
+          <p class="font-bold">LINK VIDEO & BUKTI UPLOAD</p>
+          <ul>
+            <li>- Instagram @youtheconomicsummit.official</li>
+            <li>- Instagram @core_indonesia</li>
+            <li>- Instagram @suaradotcom</li>
+            <li>- Instagram @ruanggagasan.core</li>
+            <li>- TikTok @coreindonesia.official</li>
+            <li>- YouTube CORE Indonesia</li>
+          </ul>
+          <p class="font-bold">PERSETUJUAN & KONFIRMASI</p>
+          <ul>
+            <li>- Saya adalah Warga Negara Indonesia berusia 15-30 tahun</li>
+            <li>- Saya menjamin bahwa karya yang disubmit adalah karya orisinal dan tidak melanggar hak cipta pihak manapun</li>
+            <li>- Saya telah membaca dan menyetujui semua syarat dan ketentuan lomba</li>
+            <li>- Saya menyetujui apabila menjadi pemenang penggunaan karya oleh CORE Indonesia untuk kepentingan promosi dan edukasi dengan tetap mencantumkan kredit pembuat</li>
+            <li>- Saya bersedia menghadiri acara YES Summit 2025 jika terpilih sebagai finalis</li>
+            <li>- Saya sudah follow semua akun yang diwajibkan (Instagram & TikTok CORE Indonesia, Suara.com, dll)</li>
+          </ul>
+
+          <div class="mt-6">
+            <label class="inline-flex items-start gap-3 text-sm text-gray-700">
+              <input
+                type="checkbox"
+                name="persetujuan"
+                required
+                class="accent-[#F05235] w-5 h-5 border border-gray-300 rounded focus:ring-2 focus:ring-[#F05235]"
+              />
+              <span>
+                Saya menyatakan bahwa data yang saya isi adalah benar dan saya menyetujui seluruh <strong>syarat dan ketentuan</strong> yang berlaku.
+              </span>
+            </label>
+          </div>
+
+          <div class="flex items-center justify-between pt-4 w-full">
+            <h3 class="text-left font-bold">www.youtheconomicsummit.org</h3>
+            <div class="text-right pt-4">
+              <button type="submit"
+                class="bg-[#F05235] hover:bg-[#d8432c] text-white font-bold py-2 px-8 rounded-full transition-all">
+                Daftar Sekarang
+              </button>
+            </div>
+          </div>
+         
+         
+        </form>
+
+
+      </div>
+    </section>
+
+    <footer class="w-full relative xs:h-full overflow-hidden bg-[#F2F2F2]">
+      <div class="w-full max-w-[1200px] mx-auto px-2 py-[10px] relative ">
+          <p class="text-center">© 2025 youtheconomicsummit.org - All Rights Reserved</p>
+      </div>
+      <div>
+        <img
+              src="./images/foot-boot.png"
+              class=""
+            />
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+      function openModal(id) {
+        document.getElementById(id).classList.remove('hidden');
+        document.getElementById(id).classList.add('flex');
+      }
+    
+      function closeModal(id) {
+        document.getElementById(id).classList.add('hidden');
+        document.getElementById(id).classList.remove('flex');
+      }
+    
+      // Optional: Close modal if clicking outside the modal content
+      window.addEventListener('click', function (e) {
+        const modal = document.getElementById('modalYEO');
+        if (e.target === modal) {
+          closeModal('modalYEO');
+        }
+      });
+      // Optional: Close modal if clicking outside the modal content
+      window.addEventListener('click', function (e) {
+        const modal = document.getElementById('modalTALK');
+        if (e.target === modal) {
+          closeModal('modalTALK');
+        }
+      });
+      // Optional: Close modal if clicking outside the modal content
+      window.addEventListener('click', function (e) {
+        const modal = document.getElementById('modalYES');
+        if (e.target === modal) {
+          closeModal('modalYES');
+        }
+      });
+    </script>
+  </body>
+</html>
